@@ -1,0 +1,17 @@
+{
+  "name": "blackarj",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "npx tailwindcss -i ./src/main.css -o ./dist/css/style.css --watch"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "autoprefixer": "^10.4.17",
+    "daisyui": "^4.7.0",
+    "postcss": "^8.4.35",
+    "tailwindcss": "^3.4.1"
+  }
+}
