@@ -6,6 +6,27 @@
     <link href="css/style.css" rel="stylesheet" />
   </head>
   <body>
+    <!--Header-->
+    <div class="bg-base-100 w-full px-4 lg:px-8 xl:px-16 2xl:px-32">
+      <header class="flex h-20 items-center justify-between">
+        <div class="left">
+          <img src="images/logo-header.svg" alt="" />
+        </div>
+        <div class="right gap-2">
+          <a href="#" class="btn btn-ghost w-14 px-3"><img src="images/home-icon.svg" alt="" /></a>
+          <a href="#" class="btn btn-ghost w-14 px-3"><img src="images/search-icon.svg" alt="" /></a>
+          <a href="#" class="btn btn-ghost w-14 px-3"><img src="images/translate-icon.svg" alt="" /></a>
+        </div>
+      </header>
+    </div>
+    <!--Banner Nav-->
+    <div class="bg-base-100 h-screen">
+      <div class="flex">
+        <div class="">1</div>
+        <div class="">2</div>
+        <div class="">3</div>
+      </div>
+    </div>
     <!--ABOUT-->
     <div class="bg-base-200">
       <div class="bg-gray-200 rounded-3xl">
@@ -13,7 +34,7 @@
           <div class="flex flex-col sm:flex-row gap-10">
             <div class="left flex flex-col justify-between sm:w-2/5 leading-relaxed">
               <div class="flex flex-col gap-6 pb-11">
-                <div class="num flex border-t-2 border-cyan-600 text-cyan-600 font-bold pt-2">01</div>
+                <div class="num border-t-2 border-cyan-600 text-cyan-600 font-bold pt-2">01</div>
                 <div class="title uppercase text-5xl font-bold">
                   ABOUT
                   <br />
@@ -21,7 +42,7 @@
                 </div>
               </div>
               <div class="flex flex-col flex-1">
-                <div class="about py-10 w-full sm:w-4/5">
+                <div class="about py-10 w-full md:w-4/5">
                   <p class="flow-root pb-8">
                     启仁化工成立于2012年，座落于美丽的太湖之滨—无锡，是一家专业从事化工产品研发与销售的综合性高科技服务性企业。由一批化工领域的专业研究人员和在化工行业从事多年的销售团队组建而成，拥有完善的技术团队，能够及时为客户提供技术支持。
                   </p>
@@ -50,8 +71,12 @@
               </figure>
               <div class="pt-8 sm:pt-44">
                 <div class="flex gap-8">
-                  <div class="size-56 bg-gray-300 rounded-3xl">1</div>
-                  <div class="size-56 bg-gray-300 rounded-3xl">2</div>
+                  <div class="size-full md:size-56 bg-gray-300 rounded-3xl p-8 text-xl">
+                    科技创新，立于诚信，感恩于心
+                  </div>
+                  <div class="size-full md:size-56 bg-gray-300 rounded-3xl p-8 text-xl">
+                    科技创新，立于诚信，感恩于心
+                  </div>
                 </div>
               </div>
             </div>
@@ -61,7 +86,7 @@
               <p>专业，诚信，合作共赢</p>
               <p>科技创新，立于诚信，感恩于心</p>
             </div>
-            <div class="text-base sm:text-2xl leading-relaxed sm:leading-loose">
+            <div class="text-base md:text-xl leading-relaxed md:leading-loose">
               深入骨髓的“QR精神”：QR既是“启仁”拼音的首字母，又是英文单词“Qucik
               Response”的首字母，“快速反应”不仅体现在对市场的把握和用户的需求，同样也适用于公司内部运营，天下武功无坚不摧，唯快不破。
             </div>
