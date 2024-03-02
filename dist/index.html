@@ -7,25 +7,74 @@
   </head>
   <body>
     <!--Header-->
-    <div class="bg-base-100 w-full px-4 lg:px-8 xl:px-16 2xl:px-32">
-      <header class="flex h-20 items-center justify-between">
-        <div class="left">
-          <img src="images/logo-header.svg" alt="" />
+    <div class="w-full h-screen bg-base-100 relative">
+      <div class="px-4 lg:px-8 xl:px-16 2xl:px-32">
+        <div class="w-full">
+          <header class="flex h-20 items-center justify-between">
+            <div class="left">
+              <img src="images/logo-header.svg" alt="" />
+            </div>
+            <div class="right gap-2">
+              <a href="#" class="btn btn-ghost w-14 px-3"><img src="images/home-icon.svg" alt="" /></a>
+              <a href="#" class="btn btn-ghost w-14 px-3"><img src="images/search-icon.svg" alt="" /></a>
+              <a href="#" class="btn btn-ghost w-14 px-3"><img src="images/translate-icon.svg" alt="" /></a>
+            </div>
+          </header>
         </div>
-        <div class="right gap-2">
-          <a href="#" class="btn btn-ghost w-14 px-3"><img src="images/home-icon.svg" alt="" /></a>
-          <a href="#" class="btn btn-ghost w-14 px-3"><img src="images/search-icon.svg" alt="" /></a>
-          <a href="#" class="btn btn-ghost w-14 px-3"><img src="images/translate-icon.svg" alt="" /></a>
+        <!--Banner-->
+        <div class="h-full pt-20 xl:pr-[256px] 2xl:pr-[224px]">
+          <div class="flex gap-8">
+            <div class="rounded-3xl overflow-hidden w-3/5">
+              <img
+                class="h-full w-full"
+                src="https://daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.jpg"
+                alt="Shoes"
+              />
+            </div>
+            <div class="rounded-3xl overflow-hidden w-2/5">
+              <img
+                class="h-full w-full"
+                src="https://daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.jpg"
+                alt="Shoes"
+              />
+            </div>
+          </div>
         </div>
-      </header>
-    </div>
-    <!--Banner Nav-->
-    <div class="bg-base-100 h-screen">
-      <div class="flex">
-        <div class="">1</div>
-        <div class="">2</div>
-        <div class="">3</div>
       </div>
+      <!--Nav-->
+      <nav class="w-72 h-full absolute right-0 top-0">
+        <div class="nav-box pt-20 pb-6 px-6 h-full">
+          <div class="flex flex-col gap-y-2">
+            <div class="flex-grow h-full bg-white rounded-3xl text-zinc-900">
+              <div class="text-lg font-bold px-4 py-4 border-b border-zinc-200">Products</div>
+              <div class="p-4">
+                <div class="pb-3">We build top-in-class digital products that reflect the brand's character.</div>
+                <ul>
+                  <li><a href="" class="px-3 py-2 block rounded-xl">仪器设备</a></li>
+                  <li><a href="" class="px-3 py-2 block rounded-xl hover: bg-zinc-100">匣钵系列</a></li>
+                  <li><a href="" class="px-3 py-2 block rounded-xl">新能源系列</a></li>
+                  <li><a href="" class="px-3 py-2 block rounded-xl">技术陶瓷系列</a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="bg-white rounded-3xl text-zinc-900">
+              <div class="text-lg font-bold px-4 py-4 border-b-0 border-zinc-200">About Me</div>
+            </div>
+            <div class="bg-white rounded-3xl text-zinc-900">
+              <div class="text-lg font-bold px-4 py-4 border-b-0 border-zinc-200">Technology</div>
+            </div>
+            <div class="bg-white rounded-3xl text-zinc-900">
+              <div class="text-lg font-bold px-4 py-4 border-b-0 border-zinc-200">News</div>
+            </div>
+            <div class="bg-white rounded-3xl text-zinc-900">
+              <div class="text-lg font-bold px-4 py-4 border-b-0 border-zinc-200">Contact Us</div>
+            </div>
+            <div class="bg-white rounded-3xl text-zinc-900">
+              <div class="text-lg font-bold px-4 py-4 border-b-0 border-zinc-200">Email</div>
+            </div>
+          </div>
+        </div>
+      </nav>
     </div>
     <!--ABOUT-->
     <div class="bg-base-200">
