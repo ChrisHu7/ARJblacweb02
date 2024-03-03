@@ -7,7 +7,7 @@
   </head>
   <body>
     <!--Header-->
-    <div class="w-full h-screen bg-base-100 relative">
+    <div class="w-full h-screen overflow-hidden bg-neutral-900 relative">
       <div class="px-4 lg:px-8 xl:px-16 2xl:px-32">
         <div class="w-full">
           <header class="flex h-20 items-center justify-between">
@@ -22,28 +22,42 @@
           </header>
         </div>
         <!--Banner-->
-        <div class="h-full pt-20 xl:pr-[256px] 2xl:pr-[224px]">
+        <div class="xl:pr-[272px] 2xl:pr-[272px]">
           <div class="flex gap-8">
-            <div class="rounded-3xl overflow-hidden w-3/5">
-              <img
-                class="h-full w-full"
-                src="https://daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.jpg"
-                alt="Shoes"
-              />
-            </div>
-            <div class="rounded-3xl overflow-hidden w-2/5">
-              <img
-                class="h-full w-full"
-                src="https://daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.jpg"
-                alt="Shoes"
-              />
+            <div
+              class="rounded-3xl overflow-hidden bg-cover bg-center w-3/5 h-[calc(100vh-112px)]"
+              style="background-image: url(images/b1.jpg)"
+            ></div>
+            <div class="flex flex-col justify-between gap-8 w-2/5">
+              <div class="bg-zinc-800 h-3/4 rounded-3xl p-9 relative overflow-hidden">
+                <h1 class="text-2xl">
+                  <p>表面に特殊な機能を持、</p>
+                  <p class="text-cyan-500">あらゆる難題を解決する</p>
+                </h1>
+                <div
+                  class="absolute left-8 bottom-16 rounded-full w-40 xl:w-60 2xl:w-80 h-1/2 2xl:h-2/3 bg-cover bg-center overflow-hidden"
+                  style="background-image: url(images/b2.png)"
+                ></div>
+                <div class="absolute right-12 bottom-0 w-1/2">
+                  <img class="w-full" src="images/tree.svg" alt="" />
+                </div>
+              </div>
+              <div class="bg-cyan-950 h-1/4 rounded-3xl p-9 relative">
+                <div class="absolute left-0 top-0"><img src="images/phone.svg" alt="" /></div>
+                <div class="flex flex-col h-full items-end justify-end leading-loose">
+                  <p class="text-xl text-cyan-500">欢迎致电联系我们</p>
+                  <p>Email: info@arjcera.com</p>
+                  <p class="text-3xl">181 1888 2229</p>
+                  <p class="text-xs text-cyan-700">微信同号</p>
+                </div>
+              </div>
             </div>
           </div>
         </div>
       </div>
       <!--Nav-->
-      <nav class="w-72 h-full absolute right-0 top-0">
-        <div class="nav-box pt-20 pb-6 px-6 h-full">
+      <nav class="xl:w-[304px] 2xl:w-[368px] h-full absolute right-0 top-0">
+        <div class="nav-box pt-20 pb-6 xl:pr-16 2xl:pr-32 h-full">
           <div class="flex flex-col gap-y-2">
             <div class="flex-grow h-full bg-white rounded-3xl text-zinc-900">
               <div class="text-lg font-bold px-4 py-4 border-b border-zinc-200">Products</div>
@@ -66,15 +80,66 @@
             <div class="bg-white rounded-3xl text-zinc-900">
               <div class="text-lg font-bold px-4 py-4 border-b-0 border-zinc-200">News</div>
             </div>
-            <div class="bg-white rounded-3xl text-zinc-900">
+            <div class="bg-cyan-500 rounded-3xl text-zinc-900">
               <div class="text-lg font-bold px-4 py-4 border-b-0 border-zinc-200">Contact Us</div>
-            </div>
-            <div class="bg-white rounded-3xl text-zinc-900">
-              <div class="text-lg font-bold px-4 py-4 border-b-0 border-zinc-200">Email</div>
             </div>
           </div>
         </div>
       </nav>
+    </div>
+
+    <div class="products">
+      <div class="w-full px-4 lg:px-8 xl:px-16 2xl:px-32 pt-24 pb-24">
+        <div class="text-center pb-12">
+          <h1 class="text-4xl">特殊機能膜の開発</h1>
+          <p class="text-3xl py-3">表面に特殊な機能を持たせ、あらゆる難題を解決する。</p>
+          <p class="text-zinc-500">
+            シナノテックは塗料商社の研究開発部門から誕生しました。
+            <br />
+            材表面の性質に関するあらゆる難題を、塗料や新技術の共同研究開発を通じて解決します。
+          </p>
+        </div>
+        <div class="grid grid-cols-3 group gap-8">
+          <div class="flex flex-col items-center rounded-3xl overflow-hidden bg-zinc-800">
+            <div class="img h-64 overflow-hidden"><img src="images/solution_01.jpg" alt="" /></div>
+            <div class="p-8 w-full text-center">
+              <h1 class="text-2xl">新能源产品</h1>
+              <p class="text-sm py-3">機能性と快適性を追求した働く空間の創造</p>
+              <div class="grid grid-cols-2 gap-2">
+                <a href="" class="btn btn-primary btn-outline w-full rounded">钠离子电池材料合成用陶瓷坩埚</a>
+                <a href="" class="btn btn-primary btn-outline w-full rounded">正极材料合成用陶瓷坩埚</a>
+                <a href="" class="btn btn-primary btn-outline w-full rounded">石英石系列</a>
+                <a href="" class="btn btn-primary btn-outline w-full rounded">美国真点刮刀</a>
+              </div>
+            </div>
+          </div>
+          <div class="flex flex-col items-center rounded-3xl overflow-hidden bg-zinc-800">
+            <div class="img h-64 overflow-hidden"><img src="images/solution_01.jpg" alt="" /></div>
+            <div class="p-8 w-full text-center">
+              <h1 class="text-2xl">仪器设备</h1>
+              <p class="text-sm py-3">機能性と快適性を追求した働く空間の創造</p>
+              <div class="flex flex-col gap-2">
+                <a href="" class="btn btn-primary btn-outline w-full rounded">日本熊谷透气仪0158-P</a>
+                <a href="" class="btn btn-primary btn-outline w-full rounded">泰克米纳Smoothflow Pump Q系列</a>
+              </div>
+            </div>
+          </div>
+          <div class="flex flex-col items-center rounded-3xl overflow-hidden bg-zinc-800">
+            <div class="img h-64 overflow-hidden"><img src="images/solution_01.jpg" alt="" /></div>
+            <div class="p-8 w-full text-center">
+              <h1 class="text-2xl">技术陶瓷添加剂</h1>
+              <p class="text-sm py-3">機能性と快適性を追求した働く空間の創造</p>
+              <div class="grid grid-cols-2 gap-2">
+                <a href="" class="btn btn-primary btn-outline w-full rounded">分散剂 CE 64</a>
+                <a href="" class="btn btn-primary btn-outline w-full rounded">分散剂 KV 5088</a>
+                <a href="" class="btn btn-primary btn-outline w-full rounded">脱模剂 O 59</a>
+                <a href="" class="btn btn-primary btn-outline w-full rounded">脱模剂 W 165</a>
+                <a href="" class="btn btn-primary btn-outline w-full rounded">粘结剂 ZUSOPLAST 9002</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
     <!--ABOUT-->
     <div class="bg-base-200">
