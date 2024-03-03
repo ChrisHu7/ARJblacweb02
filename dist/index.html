@@ -23,13 +23,13 @@
         </div>
         <!--Banner-->
         <div class="xl:pr-[272px] 2xl:pr-[272px]">
-          <div class="flex gap-8">
+          <div class="flex flex-col lg:flex-row gap-8">
             <div
-              class="rounded-3xl overflow-hidden bg-cover bg-center w-3/5 h-[calc(100vh-112px)]"
+              class="rounded-3xl overflow-hidden bg-cover bg-center w-full lg:w-3/5 h-[calc(100vh-112px)]"
               style="background-image: url(images/b1.jpg)"
             ></div>
             <div class="flex flex-col justify-between gap-8 w-2/5">
-              <div class="bg-zinc-800 h-3/4 rounded-3xl p-9 relative overflow-hidden">
+              <div class="hidden lg:block bg-zinc-800 h-3/4 rounded-3xl p-9 relative overflow-hidden">
                 <h1 class="text-2xl">
                   <p>表面に特殊な機能を持、</p>
                   <p class="text-cyan-500">あらゆる難題を解決する</p>
@@ -56,7 +56,7 @@
         </div>
       </div>
       <!--Nav-->
-      <nav class="xl:w-[304px] 2xl:w-[368px] h-full absolute right-0 top-0">
+      <nav class="hidden xl:block xl:w-[304px] 2xl:w-[368px] h-full absolute right-0 top-0">
         <div class="nav-box pt-20 pb-6 xl:pr-16 2xl:pr-32 h-full">
           <div class="flex flex-col gap-y-2">
             <div class="flex-grow h-full bg-white rounded-3xl text-zinc-900">
@@ -99,22 +99,29 @@
             材表面の性質に関するあらゆる難題を、塗料や新技術の共同研究開発を通じて解決します。
           </p>
         </div>
-        <div class="grid grid-cols-3 group gap-8">
+        <div class="grid md:grid-cols-3 group gap-8">
           <div class="flex flex-col items-center rounded-3xl overflow-hidden bg-zinc-800">
-            <div class="img h-64 overflow-hidden"><img src="images/solution_01.jpg" alt="" /></div>
+            <div
+              class="img w-full h-64 overflow-hidden bg-no-repeat bg-center"
+              style="background-image: url(images/solution_01.jpg)"
+            ></div>
             <div class="p-8 w-full text-center">
               <h1 class="text-2xl">新能源产品</h1>
               <p class="text-sm py-3">機能性と快適性を追求した働く空間の創造</p>
-              <div class="grid grid-cols-2 gap-2">
-                <a href="" class="btn btn-primary btn-outline w-full rounded">钠离子电池材料合成用陶瓷坩埚</a>
-                <a href="" class="btn btn-primary btn-outline w-full rounded">正极材料合成用陶瓷坩埚</a>
+              <div class="grid lg:grid-cols-2 gap-2">
+                <a href="" class="btn btn-primary btn-outline w-full rounded">陶瓷坩埚</a>
                 <a href="" class="btn btn-primary btn-outline w-full rounded">石英石系列</a>
-                <a href="" class="btn btn-primary btn-outline w-full rounded">美国真点刮刀</a>
+                <a href="" class="btn btn-primary btn-outline w-full rounded">高纯氧化铝</a>
+                <a href="" class="btn btn-primary btn-outline w-full rounded">勃姆石系列</a>
+                <a href="" class="btn btn-primary btn-outline w-full rounded">TruPoint真点刮刀</a>
               </div>
             </div>
           </div>
           <div class="flex flex-col items-center rounded-3xl overflow-hidden bg-zinc-800">
-            <div class="img h-64 overflow-hidden"><img src="images/solution_01.jpg" alt="" /></div>
+            <div
+              class="img w-full h-64 overflow-hidden bg-no-repeat bg-center"
+              style="background-image: url(images/solution_01.jpg)"
+            ></div>
             <div class="p-8 w-full text-center">
               <h1 class="text-2xl">仪器设备</h1>
               <p class="text-sm py-3">機能性と快適性を追求した働く空間の創造</p>
@@ -125,20 +132,113 @@
             </div>
           </div>
           <div class="flex flex-col items-center rounded-3xl overflow-hidden bg-zinc-800">
-            <div class="img h-64 overflow-hidden"><img src="images/solution_01.jpg" alt="" /></div>
+            <div
+              class="img w-full h-64 overflow-hidden bg-no-repeat bg-center"
+              style="background-image: url(images/solution_01.jpg)"
+            ></div>
             <div class="p-8 w-full text-center">
               <h1 class="text-2xl">技术陶瓷添加剂</h1>
               <p class="text-sm py-3">機能性と快適性を追求した働く空間の創造</p>
-              <div class="grid grid-cols-2 gap-2">
-                <a href="" class="btn btn-primary btn-outline w-full rounded">分散剂 CE 64</a>
-                <a href="" class="btn btn-primary btn-outline w-full rounded">分散剂 KV 5088</a>
-                <a href="" class="btn btn-primary btn-outline w-full rounded">脱模剂 O 59</a>
-                <a href="" class="btn btn-primary btn-outline w-full rounded">脱模剂 W 165</a>
-                <a href="" class="btn btn-primary btn-outline w-full rounded">粘结剂 ZUSOPLAST 9002</a>
+              <div class="grid lg:grid-cols-2 gap-2">
+                <a href="" class="btn btn-primary btn-outline w-full rounded">分散剂</a>
+                <a href="" class="btn btn-primary btn-outline w-full rounded">脱模剂</a>
+                <a href="" class="btn btn-primary btn-outline w-full rounded">粘结剂</a>
+                <a href="" class="btn btn-primary btn-outline w-full rounded">增塑剂</a>
+                <a href="" class="btn btn-primary btn-outline w-full rounded">悬浮剂</a>
               </div>
             </div>
           </div>
         </div>
+        <ul class="mt-8 grid gap-4 sm:grid-cols-2 xl:grid-cols-4">
+          <li>
+            <a href="#" class="group block overflow-hidden">
+              <div class="relative bg-zinc-800 rounded-3xl overflow-hidden p-10 text-center">
+                <h3 class="text-base text-zinc-500 group-hover:underline group-hover:underline-offset-4 pb-3">
+                  分散剂
+                </h3>
+                <h1 class="text-2xl text-white">DOLAPIX CE 64</h1>
+                <button class="btn btn-primary h-10 rounded-none rounded-tl-2xl border-0 absolute right-0 bottom-0">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke-width="1.5"
+                    stroke="currentColor"
+                    class="w-6 h-6"
+                  >
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M12 4.5v15m7.5-7.5h-15" />
+                  </svg>
+                </button>
+              </div>
+            </a>
+          </li>
+          <li>
+            <a href="#" class="group block overflow-hidden">
+              <div class="relative bg-zinc-800 rounded-3xl overflow-hidden py-10 text-center">
+                <h3 class="text-base text-zinc-500 group-hover:underline group-hover:underline-offset-4 pb-3">
+                  分散剂
+                </h3>
+                <h1 class="text-2xl text-white">DOLAPIX CE 64</h1>
+                <button class="btn btn-primary rounded-none rounded-tl-2xl border-0 absolute right-0 bottom-0">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke-width="1.5"
+                    stroke="currentColor"
+                    class="w-6 h-6"
+                  >
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M12 4.5v15m7.5-7.5h-15" />
+                  </svg>
+                </button>
+              </div>
+            </a>
+          </li>
+          <li>
+            <a href="#" class="group block overflow-hidden">
+              <div class="relative bg-zinc-800 rounded-3xl overflow-hidden py-10 text-center">
+                <h3 class="text-base text-zinc-500 group-hover:underline group-hover:underline-offset-4 pb-3">
+                  分散剂
+                </h3>
+                <h1 class="text-2xl text-white">DOLAPIX CE 64</h1>
+                <button class="btn btn-primary rounded-none rounded-tl-2xl border-0 absolute right-0 bottom-0">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke-width="1.5"
+                    stroke="currentColor"
+                    class="w-6 h-6"
+                  >
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M12 4.5v15m7.5-7.5h-15" />
+                  </svg>
+                </button>
+              </div>
+            </a>
+          </li>
+          <li>
+            <a href="#" class="group block overflow-hidden">
+              <div class="relative bg-zinc-800 rounded-3xl overflow-hidden py-10 text-center">
+                <h3 class="text-base text-zinc-500 group-hover:underline group-hover:underline-offset-4 pb-3">
+                  分散剂
+                </h3>
+                <h1 class="text-2xl text-white">DOLAPIX CE 64</h1>
+                <button class="btn btn-primary rounded-none rounded-tl-2xl border-0 absolute right-0 bottom-0">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke-width="1.5"
+                    stroke="currentColor"
+                    class="w-6 h-6"
+                  >
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M12 4.5v15m7.5-7.5h-15" />
+                  </svg>
+                </button>
+              </div>
+            </a>
+          </li>
+        </ul>
       </div>
     </div>
     <!--ABOUT-->
@@ -148,7 +248,7 @@
           <div class="flex flex-col sm:flex-row gap-10">
             <div class="left flex flex-col justify-between sm:w-2/5 leading-relaxed">
               <div class="flex flex-col gap-6 pb-11">
-                <div class="num border-t-2 border-cyan-600 text-cyan-600 font-bold pt-2">01</div>
+                <div class="num inline-flex border-t-2 border-cyan-600 text-cyan-600 font-bold pt-2">01</div>
                 <div class="title uppercase text-5xl font-bold">
                   ABOUT
                   <br />
