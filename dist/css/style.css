@@ -506,7 +506,97 @@ html {
   -webkit-tap-highlight-color: transparent;
 }
 
+:root screens {
+  3xl: 1920px;
+}
+
 :root {
+  --b1: 100 0 0;
+  --in: 0.7206 0.191 231.6;
+  --su: 64.8% 0.150 160;
+  --wa: 0.8471 0.199 83.87;
+  --er: 0.7176 0.221 22.18;
+  --inc: 0 0 0;
+  --suc: 0 0 0;
+  --wac: 0 0 0;
+  --erc: 0 0 0;
+  --rounded-box: 1rem;
+  --rounded-btn: 0.5rem;
+  --rounded-badge: 1.9rem;
+  --animation-btn: 0.25s;
+  --animation-input: .2s;
+  --btn-focus-scale: 0.95;
+  --border-btn: 1px;
+  --tab-border: 1px;
+  --tab-radius: 0.5rem;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --p: 0.608911 0.110939 221.723108;
+    --inc: 0.158565 0.02426 236.405039;
+    --suc: 0.155768 0.038216 132.087141;
+    --wac: 0.171625 0.027471 102.944891;
+    --erc: 0.142321 0.036244 22.838886;
+    --btn-focus-scale: 0.95;
+    --tab-border: 1px;
+    --tab-radius: 0.5rem;
+    primary-focus: #0e7490;
+    --pc: 1 0 0;
+    --s: 0.640524 0.27518 342.547599;
+    secondary-focus: #bd0091;
+    --sc: 1 0 0;
+    --a: 0.768742 0.123447 184.972959;
+    accent-focus: #2ba69a;
+    --ac: 1 0 0;
+    --n: 0.301015 0.017256 266.377669;
+    neutral-focus: #16181d;
+    --nc: 1 0 0;
+    --b1: 0.210331 0.00586 285.885153;
+    --b2: 0.273936 0.005477 286.032639;
+    --b3: 0.551664 0.013808 285.93847;
+    --bc: 1 0 0;
+    --in: 0.792827 0.121301 236.405039;
+    --su: 0.778842 0.191078 132.087141;
+    --wa: 0.858125 0.137355 102.944891;
+    --er: 0.711607 0.181221 22.838886;
+    --rounded-box: 1rem;
+    --rounded-btn: 1rem;
+    --rounded-badge: 1.9rem;
+    --animation-btn: .25s;
+    --animation-input: .2s;
+    --btn-text-case: uppercase;
+    --navbar-padding: .5rem;
+    --border-btn: 1px;
+  }
+}
+
+[data-theme=container] screens {
+  3xl: 1920px;
+}
+
+[data-theme=container] {
+  --b1: 100 0 0;
+  --in: 0.7206 0.191 231.6;
+  --su: 64.8% 0.150 160;
+  --wa: 0.8471 0.199 83.87;
+  --er: 0.7176 0.221 22.18;
+  --inc: 0 0 0;
+  --suc: 0 0 0;
+  --wac: 0 0 0;
+  --erc: 0 0 0;
+  --rounded-box: 1rem;
+  --rounded-btn: 0.5rem;
+  --rounded-badge: 1.9rem;
+  --animation-btn: 0.25s;
+  --animation-input: .2s;
+  --btn-focus-scale: 0.95;
+  --border-btn: 1px;
+  --tab-border: 1px;
+  --tab-radius: 0.5rem;
+}
+
+[data-theme=dark] {
   --p: 0.608911 0.110939 221.723108;
   --inc: 0.158565 0.02426 236.405039;
   --suc: 0.155768 0.038216 132.087141;
@@ -983,6 +1073,48 @@ html {
   text-decoration-line: underline;
 }
 
+.swap {
+  position: relative;
+  display: inline-grid;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
+  place-content: center;
+  cursor: pointer;
+}
+
+.swap > * {
+  grid-column-start: 1;
+  grid-row-start: 1;
+  transition-duration: 300ms;
+  transition-timing-function: cubic-bezier(0, 0, 0.2, 1);
+  transition-property: transform, opacity;
+}
+
+.swap input {
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+}
+
+.swap .swap-on,
+.swap .swap-indeterminate,
+.swap input:indeterminate ~ .swap-on {
+  opacity: 0;
+}
+
+.swap input:checked ~ .swap-off,
+.swap-active .swap-off,
+.swap input:indeterminate ~ .swap-off {
+  opacity: 0;
+}
+
+.swap input:checked ~ .swap-on,
+.swap-active .swap-on,
+.swap input:indeterminate ~ .swap-indeterminate {
+  opacity: 1;
+}
+
 .btn:active:hover,
   .btn:active:focus {
   animation: button-pop 0s ease-out;
@@ -1279,6 +1411,12 @@ html {
 .link:focus-visible {
   outline: 2px solid currentColor;
   outline-offset: 2px;
+}
+
+.mockup-phone .display {
+  overflow: hidden;
+  border-radius: 40px;
+  margin-top: -25px;
 }
 
 @keyframes modal-pop {
@@ -1812,6 +1950,11 @@ html {
   padding-right: 1rem;
 }
 
+.px-6 {
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+}
+
 .px-9 {
   padding-left: 2.25rem;
   padding-right: 2.25rem;
@@ -1845,11 +1988,6 @@ html {
 .py-4 {
   padding-top: 1rem;
   padding-bottom: 1rem;
-}
-
-.px-6 {
-  padding-left: 1.5rem;
-  padding-right: 1.5rem;
 }
 
 .pb-11 {

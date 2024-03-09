@@ -4,6 +4,27 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link href="css/style.css" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,500;1,400&family=Noto+Serif+SC:wght@600;700&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      .noto-serif sc-semibold {
+        font-family: 'Noto Serif SC', serif;
+        font-weight: 600;
+        font-style: normal;
+      }
+
+      .noto-serif sc-bold {
+        font-family: 'Noto Serif SC', serif;
+        font-weight: 700;
+        font-style: normal;
+      }
+    </style>
   </head>
   <body>
     <!--Header-->
@@ -90,10 +111,12 @@
     </div>
 
     <div class="products bg-neutral-900">
-      <div class="w-full px-4 lg:px-8 xl:px-16 2xl:px-32 pt-24 pb-24">
+      <div class="max-w-screen-3xl mx-auto px-4 lg:px-8 xl:px-16 2xl:px-32 pt-24 pb-24">
         <div class="text-center pb-12">
-          <h1 class="text-4xl">艾瑞杰主营产品</h1>
-          <p class="text-3xl py-3">为半导体新能源领域提供石英石制品及解决方案，成为行业引领者</p>
+          <h1 class="text-4xl noto-serif"><sc-bold>艾瑞杰主营产品</sc-bold></h1>
+          <p class="text-3xl py-3 noto-serif">
+            <sc-semibold>为半导体新能源领域提供石英石制品及解决方案，成为行业引领者</sc-semibold>
+          </p>
           <p class="text-zinc-500">
             为客户提供量身定制的产品，满足不断变化的市场需求
             <br />
@@ -288,21 +311,22 @@
                 <img class="w-full object-cover" src="images/ab2.jpg" alt="about wuxi arj" />
               </figure>
               <div class="pt-8 sm:pt-44">
-                <div class="flex gap-8">
+                <div class="flex gap-8 noto-serif">
                   <div class="size-full md:size-56 bg-gray-300 rounded-3xl p-8 text-xl">
-                    科技创新，立于诚信，感恩于心
+                    <sc-bold>科技创新，立于诚信，感恩于心</sc-bold>
                   </div>
                   <div class="size-full md:size-56 bg-gray-300 rounded-3xl p-8 text-xl">
-                    科技创新，立于诚信，感恩于心
+                    <sc-bold>科技创新，立于诚信，感恩于心</sc-bold>
                   </div>
                 </div>
               </div>
             </div>
           </div>
           <div class="grid md:grid-cols-2 gap-10 pt-24">
-            <div class="text-4xl font-bold leading-relaxed">
-              <p>专业，诚信，合作共赢</p>
-              <p>科技创新，立于诚信，感恩于心</p>
+            <div class="text-4xl font-bold leading-relaxed noto-serif">
+              <sc-bold>专业，诚信，合作共赢</sc-bold>
+              <br />
+              <sc-bold>科技创新，立于诚信，感恩于心</sc-bold>
             </div>
             <div class="text-base md:text-xl leading-relaxed md:leading-loose">
               深入骨髓的“QR精神”：QR既是“启仁”拼音的首字母，又是英文单词“Qucik
