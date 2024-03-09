@@ -1,14 +1,16 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
   content: ['./dist/**/*.{html,js}'],
+  theme: {
+    extend: {
+      screens: {
+        '3xl': '1920px'
+      }
+    }
+  },
   daisyui: {
     themes: [
       {
-        container: {
-          screens: {
-            '3xl': '1920px'
-          }
-        },
         dark: {
           primary: '#0891b2',
           'primary-focus': '#0e7490',
