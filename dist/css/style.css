@@ -1487,6 +1487,10 @@ html {
   top: 0px;
 }
 
+.-z-0 {
+  z-index: 0;
+}
+
 .mx-1 {
   margin-left: 0.25rem;
   margin-right: 0.25rem;
@@ -1780,21 +1784,6 @@ html {
 .border-zinc-700 {
   --tw-border-opacity: 1;
   border-color: rgb(63 63 70 / var(--tw-border-opacity));
-}
-
-.border-zinc-800 {
-  --tw-border-opacity: 1;
-  border-color: rgb(39 39 42 / var(--tw-border-opacity));
-}
-
-.border-neutral-700 {
-  --tw-border-opacity: 1;
-  border-color: rgb(64 64 64 / var(--tw-border-opacity));
-}
-
-.border-neutral-800 {
-  --tw-border-opacity: 1;
-  border-color: rgb(38 38 38 / var(--tw-border-opacity));
 }
 
 .bg-base-100 {
@@ -2106,6 +2095,30 @@ html {
   color: rgb(24 24 27 / var(--tw-text-opacity));
 }
 
+.noto-serif sc-semibold {
+  font-family: 'Noto Serif SC', serif;
+  font-weight: 600;
+  font-style: normal;
+}
+
+.noto-serif sc-bold {
+  font-family: 'Noto Serif SC', serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.swiper-pagination-bullet {
+  width: 16px;
+  height: 2px;
+  border-radius: 0;
+  background-color: #ffffff;
+}
+
+.swiper-pagination-bullet-active {
+  width: 32px;
+  background-color: #06b6d4;
+}
+
 .\*\:text-lg > * {
   font-size: 1.125rem;
   line-height: 1.75rem;
@@ -2356,8 +2369,8 @@ html {
     padding-right: 4rem;
   }
 
-  .xl\:pr-16 {
-    padding-right: 4rem;
+  .xl\:pl-16 {
+    padding-left: 4rem;
   }
 
   .xl\:pr-\[272px\] {
@@ -2383,8 +2396,8 @@ html {
     padding-right: 8rem;
   }
 
-  .\32xl\:pr-32 {
-    padding-right: 8rem;
+  .\32xl\:pl-32 {
+    padding-left: 8rem;
   }
 
   .\32xl\:pr-\[272px\] {

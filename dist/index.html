@@ -27,7 +27,7 @@
       }
       .swiper-pagination-bullet {
         width: 16px;
-        height: 2px;
+        height: 3px;
         border-radius: 0;
         background-color: #ffffff;
       }
@@ -37,11 +37,11 @@
       }
     </style>
   </head>
-  <body>
+  <body class="">
     <!--Header-->
-    <div class="w-full h-screen overflow-hidden bg-neutral-900 relative">
+    <div class="w-full h-screen overflow-hidden bg-neutral-900">
       <div class="px-4 lg:px-8 xl:px-16 2xl:px-32">
-        <div class="max-w-screen-3xl mx-auto">
+        <div class="max-w-screen-3xl mx-auto relative">
           <header class="flex h-20 items-center justify-between">
             <div class="left">
               <img src="images/logo-header.svg" alt="" class="h-8" />
@@ -52,9 +52,7 @@
               <a href="#" class="btn btn-ghost w-14 px-3"><img src="images/translate-icon.svg" alt="" /></a>
             </div>
           </header>
-        </div>
-        <!--Banner-->
-        <div class="max-w-screen-3xl mx-auto">
+          <!--Banner-->
           <div class="xl:pr-[272px] 2xl:pr-[272px]">
             <div class="flex flex-col lg:flex-row gap-8">
               <div class="rounded-3xl overflow-hidden w-full lg:w-3/5 h-[calc(100vh-112px)]">
@@ -124,40 +122,40 @@
               </div>
             </div>
           </div>
-        </div>
-      </div>
-      <!--Nav-->
-      <nav class="hidden xl:block xl:w-[304px] 2xl:w-[368px] h-full absolute right-0 top-0">
-        <div class="nav-box pt-20 pb-8 xl:pr-16 2xl:pr-32 h-full">
-          <div class="flex flex-col gap-y-2 h-full">
-            <div class="relative grow bg-white rounded-3xl text-zinc-900">
-              <div class="text-lg font-bold px-6 py-4 border-b border-zinc-200">主营产品</div>
-              <div class="p-4">
-                <div class="pb-3 text-xs">主要涉及半导体、太阳能、光纤、LED、光学、光通讯和电子化学等多个领域</div>
-                <ul>
-                  <li><a href="" class="px-3 py-2 block rounded-xl">仪器设备</a></li>
-                  <li><a href="" class="px-3 py-2 block rounded-xl hover: bg-zinc-100">匣钵系列</a></li>
-                  <li><a href="" class="px-3 py-2 block rounded-xl">新能源系列</a></li>
-                  <li><a href="" class="px-3 py-2 block rounded-xl">技术陶瓷系列</a></li>
-                </ul>
-                <div class="absolute right-4 bottom-4"><img src="images/pro1.svg" alt="" /></div>
+          <!--Nav-->
+          <nav class="hidden absolute right-0 top-0 xl:block xl:w-60 h-full -z-0">
+            <div class="nav-box pt-20 h-full">
+              <div class="flex flex-col gap-y-2 h-full">
+                <div class="relative grow bg-white rounded-xl text-zinc-900">
+                  <div class="text-lg font-bold px-6 py-4 border-b border-zinc-200">主营产品</div>
+                  <div class="p-4">
+                    <div class="pb-3 text-xs">主要涉及半导体、太阳能、光纤、LED、光学、光通讯和电子化学等多个领域</div>
+                    <ul>
+                      <li><a href="" class="px-3 py-2 block rounded-xl">仪器设备</a></li>
+                      <li><a href="" class="px-3 py-2 block rounded-xl hover: bg-zinc-100">匣钵系列</a></li>
+                      <li><a href="" class="px-3 py-2 block rounded-xl">新能源系列</a></li>
+                      <li><a href="" class="px-3 py-2 block rounded-xl">技术陶瓷系列</a></li>
+                    </ul>
+                    <div class="absolute right-4 bottom-4"><img src="images/pro1.svg" alt="" /></div>
+                  </div>
+                </div>
+                <a href="" class="grow-0 bg-white rounded-xl text-zinc-900">
+                  <div class="text-lg font-bold px-6 py-4 border-b-0 border-zinc-200">关于我们</div>
+                </a>
+                <a href="" class="grow-0 bg-white rounded-xl text-zinc-900">
+                  <div class="text-lg font-bold px-6 py-4 border-b-0 border-zinc-200">相关技术</div>
+                </a>
+                <a href="" class="grow-0 bg-white rounded-xl text-zinc-900">
+                  <div class="text-lg font-bold px-6 py-4 border-b-0 border-zinc-200">新闻动态</div>
+                </a>
+                <a href="" class="grow-0 bg-cyan-500 rounded-xl text-zinc-900">
+                  <div class="text-lg font-bold px-6 py-4 border-b-0 border-zinc-200">联系我们</div>
+                </a>
               </div>
             </div>
-            <a href="" class="grow-0 bg-white rounded-3xl text-zinc-900">
-              <div class="text-lg font-bold px-6 py-4 border-b-0 border-zinc-200">关于我们</div>
-            </a>
-            <a href="" class="grow-0 bg-white rounded-3xl text-zinc-900">
-              <div class="text-lg font-bold px-6 py-4 border-b-0 border-zinc-200">相关技术</div>
-            </a>
-            <a href="" class="grow-0 bg-white rounded-3xl text-zinc-900">
-              <div class="text-lg font-bold px-6 py-4 border-b-0 border-zinc-200">新闻动态</div>
-            </a>
-            <a href="" class="grow-0 bg-cyan-500 rounded-3xl text-zinc-900">
-              <div class="text-lg font-bold px-6 py-4 border-b-0 border-zinc-200">联系我们</div>
-            </a>
-          </div>
+          </nav>
         </div>
-      </nav>
+      </div>
     </div>
 
     <div class="products bg-neutral-900">
@@ -417,7 +415,7 @@
           <div class="grid mt-5 lg:grid-cols-4 gap-y-14 lg:gap-10">
             <a href="" class="card group bg-base-100 items-start">
               <figure class="px-8 pt-10">
-                <img src="images/se5.svg" alt="Shoes" class="w-24 h-24" />
+                <img src="images/se1.svg" alt="Shoes" class="w-24 h-24" />
               </figure>
               <div class="card-body">
                 <h2 class="card-title text-2xl group-hover:text-cyan-500">提供产品定制服务</h2>
@@ -707,7 +705,7 @@
     <!-- Swiper JS -->
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 
-    <!-- Initialize Swiper -->
+    <!-- Swiper -->
     <script>
       var swiper = new Swiper('.mySwiper', {
         spaceBetween: 30,

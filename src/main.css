@@ -1,3 +1,24 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+.noto-serif sc-semibold {
+  font-family: 'Noto Serif SC', serif;
+  font-weight: 600;
+  font-style: normal;
+}
+
+.noto-serif sc-bold {
+  font-family: 'Noto Serif SC', serif;
+  font-weight: 700;
+  font-style: normal;
+}
+.swiper-pagination-bullet {
+  width: 16px;
+  height: 2px;
+  border-radius: 0;
+  background-color: #ffffff;
+}
+.swiper-pagination-bullet-active {
+  width: 32px;
+  background-color: #06b6d4;
+}
