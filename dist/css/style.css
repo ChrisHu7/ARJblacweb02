@@ -2356,10 +2356,6 @@ html {
     width: 15rem;
   }
 
-  .xl\:w-\[304px\] {
-    width: 304px;
-  }
-
   .xl\:grid-cols-4 {
     grid-template-columns: repeat(4, minmax(0, 1fr));
   }
@@ -2367,10 +2363,6 @@ html {
   .xl\:px-16 {
     padding-left: 4rem;
     padding-right: 4rem;
-  }
-
-  .xl\:pl-16 {
-    padding-left: 4rem;
   }
 
   .xl\:pr-\[272px\] {
@@ -2387,17 +2379,9 @@ html {
     width: 20rem;
   }
 
-  .\32xl\:w-\[368px\] {
-    width: 368px;
-  }
-
   .\32xl\:px-32 {
     padding-left: 8rem;
     padding-right: 8rem;
-  }
-
-  .\32xl\:pl-32 {
-    padding-left: 8rem;
   }
 
   .\32xl\:pr-\[272px\] {
