@@ -8,8 +8,10 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,500;1,400&family=Noto+Serif+SC:wght@600;700&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Foldit:wght@100..900&family=Montserrat:ital,wght@0,500;1,400&family=Noto+Serif+SC:wght@600;700&family=Pixelify+Sans:wght@400..700&family=Silkscreen:wght@400;700&display=swap"
       rel="stylesheet"
     />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
@@ -19,9 +21,30 @@
         font-weight: 600;
         font-style: normal;
       }
-
       .noto-serif sc-bold {
         font-family: 'Noto Serif SC', serif;
+        font-weight: 700;
+        font-style: normal;
+      }
+      .silkscreen-regular {
+        font-family: 'Silkscreen', sans-serif;
+        font-weight: 400;
+        font-style: normal;
+      }
+      .silkscreen-bold {
+        font-family: 'Silkscreen', sans-serif;
+        font-weight: 700;
+        font-style: normal;
+      }
+      .foldit-bold {
+        font-family: 'Foldit', sans-serif;
+        font-optical-sizing: auto;
+        font-weight: 700;
+        font-style: normal;
+      }
+      .pixelify-sans-bold {
+        font-family: 'Pixelify Sans', sans-serif;
+        font-optical-sizing: auto;
         font-weight: 700;
         font-style: normal;
       }
@@ -54,8 +77,15 @@
           </header>
           <!--Banner-->
           <div class="xl:pr-[272px]">
-            <div class="flex flex-col h-64 bg-zinc-800 rounded-3xl overflow-hidden justify-end">
-              <h1 class="text-white text-8xl px-12 py-6">About</h1>
+            <div
+              class="flex flex-col h-64 bg-zinc-800 rounded-3xl overflow-hidden justify-end bg-no-repeat bg-right"
+              style="background-image: url(images/about-banner.svg)"
+            >
+              <div class="text-white px-12 pb-12">
+                <img src="images/about-title.svg" class="h-16 mb-6" alt="" />
+                <!-- <h1 class="text-8xl pixelify-sans-bold text-cyan-500 uppercase">About</h1> -->
+                <p class="text-lg">当社は「商社」と「メーカー」、2つの顔を併せ持っています。</p>
+              </div>
             </div>
           </div>
           <!--Nav-->
@@ -95,9 +125,9 @@
     </div>
 
     <!--About-->
-    <div class="px-4 lg:px-8 xl:px-16 2xl:px-32 bg-neutral-900 py-16">
+    <div class="px-4 lg:px-8 xl:px-16 2xl:px-32 bg-neutral-900 pt-36">
       <div class="max-w-screen-3xl mx-auto">
-        <div class="one w-1/2">
+        <div class="one w-full lg:w-1/2">
           <div class="w-6 text-center num border-t-2 border-cyan-600 text-cyan-600 font-bold pt-2 pb-4">01</div>
           <p>BUSINESS PHILOSOPHY</p>
           <h1 class="text-4xl text-white pt-5 pb-12">
@@ -119,13 +149,15 @@
             </p>
           </div>
         </div>
-        <div class="two flex gap-16 py-16">
-          <div class="w-1/2 relative">
+        <div class="two flex flex-col lg:flex-row gap-16 py-36">
+          <div class="w-full lg:w-1/2 h-96 lg:h-auto relative">
             <div
               class="w-full h-full rounded-3xl overflow-hidden bg-cover bg-center"
               style="background-image: url(images/about1.jpg)"
             ></div>
-            <div class="absolute right-0 top-0 flex items-center justify-center w-20 h-20 rounded-bl-3xl bg-zinc-900">
+            <div
+              class="absolute right-0 top-0 flex items-center justify-center w-20 h-20 rounded-bl-3xl bg-neutral-900"
+            >
               <img src="images/about2.svg" class="w-14 h-14" alt="" />
             </div>
             <div class="absolute right-20 top-0 flex items-center justify-center w-6 h-6">
@@ -134,16 +166,20 @@
             <div class="absolute right-0 top-20 flex items-center justify-center w-6 h-6">
               <img src="images/r2.svg" class="w-6 h-6" alt="" />
             </div>
+            <!-- bottom r3 -->
+            <div class="absolute bottom-24 left-0 -rotate-180 w-6 h-6">
+              <img src="images/r3.svg" class="w-6 h-6" alt="" />
+            </div>
             <div
-              class="absolute bottom-12 left-0 w-1/2 h-12 bg-neutral-900 rounded-tr-2xl uppercase text-2xl font-bold flex items-center"
+              class="absolute bottom-12 left-0 w-1/2 h-12 bg-neutral-900 rounded-tr-2xl uppercase text-xl lg:text-2xl 2xl:text-3xl font-bold flex items-center"
             >
-              china WUXI ARJ
+              CHINA WUXI ARJ
             </div>
             <div class="absolute bottom-12 left-[50%] -rotate-180 flex items-center justify-center w-6 h-6">
               <img src="images/r3.svg" class="w-6 h-6" alt="" />
             </div>
             <div
-              class="absolute bottom-0 left-0 w-3/5 h-12 bg-neutral-900 rounded-tr-2xl uppercase text-2xl font-bold flex items-center"
+              class="absolute bottom-0 left-0 w-3/5 h-12 bg-neutral-900 rounded-tr-2xl uppercase text-xl lg:text-2xl 2xl:text-3xl font-bold flex items-center"
             >
               ceramics technology
             </div>
@@ -151,8 +187,8 @@
               <img src="images/r3.svg" class="w-6 h-6" alt="" />
             </div>
           </div>
-          <div class="w-1/2">
-            <div class="w-6 text-center num border-t-2 border-cyan-600 text-cyan-600 font-bold pt-2 pb-4">01</div>
+          <div class="w-full lg:w-1/2">
+            <div class="w-6 text-center num border-t-2 border-cyan-600 text-cyan-600 font-bold pt-2 pb-4">02</div>
             <h2 class="text-base">BUSINESS PHILOSOPHY</h2>
             <h1 class="text-4xl text-white pt-5 pb-12">专业，诚信，合作共赢</h1>
             <ul class="text-xl text-cyan-600">
@@ -222,8 +258,8 @@
             </ul>
           </div>
         </div>
-        <div class="three flex flex-col gap-8">
-          <div class="w-1/2">
+        <div class="three flex flex-col lg:flex-row gap-16 pb-36">
+          <div class="w-full lg:w-1/2">
             <div class="w-6 text-center num border-t-2 border-cyan-600 text-cyan-600 font-bold pt-2 pb-4">03</div>
             <p>BUSINESS PHILOSOPHY</p>
             <h1 class="text-4xl text-white pt-5 pb-12">
@@ -239,13 +275,35 @@
                 为客户提供量身定制的产品，满足不断变化的市场需求，始终保持材料的先进性和前瞻性，以科技和创新不断驱动公司的发展。
               </p>
             </div>
-            <div class="grid grid-cols-2 gap-8">
+            <div class="grid grid-rows-1 md:grid-cols-2 gap-4 lg:gap-8 pt-12">
               <div class="h-44 rounded-3xl flex items-center bg-zinc-800 p-8">1</div>
               <div class="h-44 rounded-3xl flex items-center bg-cyan-800 p-8">1</div>
             </div>
           </div>
-          <div class="w-1/2 h-full">
-            <div class="w-full bg-cover bg-center bg-no-repeat" style="background-image: url(images/about2.jpg)"></div>
+          <div class="w-full lg:w-1/2 h-96 lg:h-auto relative">
+            <div
+              class="w-full h-full bg-cover bg-center bg-no-repeat rounded-3xl overflow-hidden"
+              style="background-image: url(images/about2.jpg)"
+            ></div>
+            <div
+              class="absolute left-0 top-0 flex items-center justify-center w-20 h-20 rounded-br-3xl bg-neutral-900"
+            ></div>
+            <div class="absolute left-20 top-0 flex items-center justify-center w-6 h-6">
+              <img src="images/r2.svg" class="w-6 h-6 -rotate-90" alt="" />
+            </div>
+            <div class="absolute left-0 top-20 flex items-center justify-center w-6 h-6">
+              <img src="images/r2.svg" class="w-6 h-6 -rotate-90" alt="" />
+            </div>
+
+            <div
+              class="absolute right-0 bottom-0 flex items-center justify-center w-20 h-20 rounded-tl-3xl bg-neutral-900"
+            ></div>
+            <div class="absolute right-20 bottom-0 flex items-center justify-center w-6 h-6">
+              <img src="images/r2.svg" class="w-6 h-6 rotate-90" alt="" />
+            </div>
+            <div class="absolute right-0 bottom-20 flex items-center justify-center w-6 h-6">
+              <img src="images/r2.svg" class="w-6 h-6 rotate-90" alt="" />
+            </div>
           </div>
         </div>
       </div>
