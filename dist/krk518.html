@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="css/style.css" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Foldit:wght@100..900&family=Montserrat:ital,wght@0,500;1,400&family=Noto+Serif+SC:wght@600;700&family=Pixelify+Sans:wght@400..700&family=Silkscreen:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <style>
+      .noto-serif sc-semibold {
+        font-family: 'Noto Serif SC', serif;
+        font-weight: 600;
+        font-style: normal;
+      }
+      .noto-serif sc-bold {
+        font-family: 'Noto Serif SC', serif;
+        font-weight: 700;
+        font-style: normal;
+      }
+      .silkscreen-regular {
+        font-family: 'Silkscreen', sans-serif;
+        font-weight: 400;
+        font-style: normal;
+      }
+      .silkscreen-bold {
+        font-family: 'Silkscreen', sans-serif;
+        font-weight: 700;
+        font-style: normal;
+      }
+      .foldit-bold {
+        font-family: 'Foldit', sans-serif;
+        font-optical-sizing: auto;
+        font-weight: 700;
+        font-style: normal;
+      }
+      .pixelify-sans-bold {
+        font-family: 'Pixelify Sans', sans-serif;
+        font-optical-sizing: auto;
+        font-weight: 700;
+        font-style: normal;
+      }
+      .swiper-pagination-bullet {
+        width: 16px;
+        height: 3px;
+        border-radius: 0;
+        background-color: #ffffff;
+      }
+      .swiper-pagination-bullet-active {
+        width: 32px;
+        background-color: #06b6d4;
+      }
+    </style>
+  </head>
+  <body class="">
+    <!--Header-->
+    <div class="w-full overflow-hidden bg-neutral-900">
+      <div class="px-4 lg:px-8 xl:px-16 2xl:px-32">
+        <div class="max-w-screen-3xl mx-auto relative">
+          <header class="flex h-20 items-center justify-between">
+            <div class="left">
+              <img src="images/logo-header.svg" alt="" class="h-8" />
+            </div>
+            <div class="right gap-2">
+              <a href="#" class="btn btn-ghost w-14 px-3"><img src="images/home-icon.svg" alt="" /></a>
+              <a href="#" class="btn btn-ghost w-14 px-3"><img src="images/search-icon.svg" alt="" /></a>
+              <a href="#" class="btn btn-ghost w-14 px-3"><img src="images/translate-icon.svg" alt="" /></a>
+            </div>
+          </header>
+          <!--Banner-->
+          <div class="xl:pr-[272px]">
+            <div
+              class="flex flex-col h-64 bg-zinc-800 rounded-3xl overflow-hidden justify-end bg-no-repeat bg-right"
+              style="background-image: url(images/about-banner.svg)"
+            >
+              <div class="text-white px-12 pb-12">
+                <img src="images/about-title.svg" class="h-16 mb-6" alt="" />
+                <p class="text-lg">当社は「商社」と「メーカー」、2つの顔を併せ持っています。</p>
+              </div>
+            </div>
+          </div>
+          <!--Nav-->
+          <nav class="hidden absolute right-0 top-0 xl:block xl:w-60 h-full -z-0">
+            <div class="nav-box pt-20 h-full">
+              <div class="flex flex-col gap-y-2 h-full *:noto-serif">
+                <div class="relative grow bg-white rounded-xl text-zinc-900">
+                  <div class="text-lg font-bold px-6 py-4 border-b border-zinc-200">产品和服务</div>
+                  <div class="p-4">
+                    <div class="pb-3 text-xs">主要涉及半导体、太阳能、光纤、LED、光学、光通讯和电子化学等多个领域</div>
+                    <ul>
+                      <li><a href="" class="px-3 py-2 block rounded-xl">仪器设备</a></li>
+                      <li><a href="" class="px-3 py-2 block rounded-xl hover: bg-zinc-100">匣钵系列</a></li>
+                      <li><a href="" class="px-3 py-2 block rounded-xl">新能源系列</a></li>
+                      <li><a href="" class="px-3 py-2 block rounded-xl">技术陶瓷系列</a></li>
+                    </ul>
+                    <div class="absolute right-4 bottom-4"><img src="images/pro1.svg" alt="" /></div>
+                  </div>
+                </div>
+                <a href="" class="grow-0 bg-white rounded-xl text-zinc-900">
+                  <div class="text-lg font-bold px-6 py-4 border-b-0 border-zinc-200">关于ARJ</div>
+                </a>
+                <a href="" class="grow-0 bg-white rounded-xl text-zinc-900">
+                  <div class="text-lg font-bold px-6 py-4 border-b-0 border-zinc-200">市场解决方案</div>
+                </a>
+                <a href="" class="grow-0 bg-white rounded-xl text-zinc-900">
+                  <div class="text-lg font-bold px-6 py-4 border-b-0 border-zinc-200">资讯动态</div>
+                </a>
+                <a href="" class="grow-0 bg-cyan-500 rounded-xl text-zinc-900">
+                  <div class="text-lg font-bold px-6 py-4 border-b-0 border-zinc-200"><sc-bold>联系我们</sc-bold></div>
+                </a>
+              </div>
+            </div>
+          </nav>
+        </div>
+      </div>
+    </div>
+
+    <!--Content-->
+    <div class="px-4 lg:px-8 xl:px-16 2xl:px-32 bg-zinc-900">
+      <div class="max-w-screen-3xl mx-auto">
+        <h1 class="text-4xl font-bold text-white py-12">数字型王研式透气仪0518-P</h1>
+        <div class="flex flex-col md:flex-row gap-6 lg:gap-12 xl:gap-32">
+          <div class="left w-full lg:w-1/2">
+            <p class="text-zinc-400">锂电池（LIB）分离膜的品质管理，最适合测量不可缺少的分离膜的透气度。</p>
+            <p class="text-zinc-400 pt-8">
+              在规定的压差条件下，测定一定时间内垂直通过试样给定面积的气流流量，计算出透气量。气流速率可直接测出，也可通过测定流量孔径两面的压差换算而得。
+            </p>
+            <p class="text-zinc-400 pt-8">
+              王研式透气仪与加雷式透气度测量仪相比，具有测量时间大幅缩短（加雷式的十分之一以下）、重复测量精度高的特点。数字型采用电子电流计代替水柱式空气电流计，将测量值转换为数字，读取方便，非常适合现场记录管理。
+            </p>
+          </div>
+          <div class="right w-full lg:w-1/2 rounded-3xl overflow-hidden">
+            <img src="images/krk518-1.jpeg" alt="" />
+          </div>
+        </div>
+        <div class="bg-zinc-800 rounded-3xl overflow-hidden my-16">
+          <div class="overflow-x-auto">
+            <table class="table">
+              <tbody>
+                <!-- row 1 -->
+                <tr>
+                  <th>显示操作</th>
+                  <td>4英寸彩色触摸屏</td>
+                </tr>
+
+                <tr>
+                  <th>电子压力计容量</th>
+                  <td>1000 mmH2O</td>
+                </tr>
+                <tr>
+                  <th>标准气压</th>
+                  <td>500 mmH2O</td>
+                </tr>
+                <tr>
+                  <th>参考规格</th>
+                  <td>ISO 5636-6</td>
+                </tr>
+                <tr>
+                  <th>使用电源</th>
+                  <td>AC220V50/60Hz1A 単相</td>
+                </tr>
+                <tr>
+                  <th>空气源</th>
+                  <td>0.4 Mpa</td>
+                </tr>
+                <tr>
+                  <th>外形尺寸</th>
+                  <td>Ｗ260×Ｄ430×Ｈ420 mm</td>
+                </tr>
+                <tr>
+                  <th>设备重量</th>
+                  <td>约24 Kg</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer nav -->
+    <div class="bg-primary">
+      <div class="bg-base-100 rounded-b-3xl">
+        <div class="border-t border-b border-zinc-700">
+          <div class="px-4 lg:px-8 xl:px-16 2xl:px-32">
+            <div class="max-w-screen-3xl mx-auto">
+              <div class="w-full flex sm:flex-row flex-col border border-zinc-700 border-t-0 border-b-0">
+                <a href="#" class="flex flex-auto items-center justify-between h-20 px-9 hover:bg-zinc-800">
+                  <div class="flex items-center gap-2 text-xl">
+                    <img src="images/email.svg" alt="" />
+                    info#arjcera.com
+                    <span class="text-sm text-zinc-500">[#替换成@]</span>
+                  </div>
+                  <img class="hidden sm:block" src="images/right-white.svg" alt="" />
+                </a>
+                <a
+                  href="#"
+                  class="flex flex-auto items-center justify-between h-20 px-9 border-zinc-700 border-l border-t sm:border-t-0 hover:bg-zinc-800"
+                >
+                  <div class="flex items-center gap-2 text-xl">
+                    <img src="images/email.svg" alt="" />
+                    +86-181 1888 2229
+                    <span class="text-sm text-zinc-500">[同微信]</span>
+                  </div>
+                  <img class="hidden sm:block" src="images/right-white.svg" alt="" />
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="px-4 lg:px-8 xl:px-16 2xl:px-32 py-14 md:py-24">
+          <div class="max-w-screen-3xl mx-auto">
+            <div class="flex items-center md:justify-between">
+              <div class="w-full uppercase text-3xl font-bold hidden md:block md:text-4xl leading-loose">
+                wuxi arj
+                <br />
+                ceramics technology
+                <br />
+                CO,.LTD.
+              </div>
+              <div class="w-full">
+                <div class="flex justify-center md:justify-end gap-6">
+                  <button class="btn btn-circle btn-outline border-zinc-700 hover:bg-zinc-800">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                      <path
+                        fill-rule="evenodd"
+                        clip-rule="evenodd"
+                        d="M9.00592 3.75091C4.90643 3.69065 1.5 6.62975 1.5 10.0961C1.5 12.097 2.46457 13.8328 4.3317 15.1072C4.3317 15.1072 3.64739 17.3106 3.65712 17.3547C3.66686 17.399 3.81579 17.4858 3.86762 17.4575C3.91945 17.4291 6.34131 16.02 6.34131 16.02C8.07695 16.6013 9.13571 16.4582 9.31642 16.4338C9.32896 16.4321 9.33728 16.431 9.34129 16.4307C9.15606 15.9016 9.03468 15.0776 9.1729 14.301C9.89646 10.2366 14.1616 8.97229 16.4992 9.18828C15.8537 6.25302 13.0499 3.81032 9.00592 3.75091ZM6.15651 7.08691C5.61874 7.08691 5.18287 7.51228 5.18287 8.03707C5.18287 8.56185 5.61874 8.98722 6.15651 8.98722C6.69429 8.98722 7.13027 8.56185 7.13027 8.03707C7.13027 7.51228 6.69429 7.08691 6.15651 7.08691ZM12.0512 7.08691C11.5135 7.08691 11.0775 7.51228 11.0775 8.03707C11.0775 8.56185 11.5135 8.98722 12.0512 8.98722C12.589 8.98722 13.0249 8.56185 13.0249 8.03707C13.0249 7.51228 12.5891 7.08691 12.0512 7.08691Z"
+                        fill="#31CE6F"
+                      />
+                      <path
+                        fill-rule="evenodd"
+                        clip-rule="evenodd"
+                        d="M22.5 14.9194C22.5 11.9498 19.5565 9.6752 16.1418 9.6752C12.5262 9.6752 9.64244 12.0012 9.64244 14.9706C9.64244 17.9454 12.3853 20.4082 16.146 20.4283C16.9029 20.4325 18.0303 20.2426 18.7905 19.9328C18.7905 19.9328 20.6077 21.0078 20.7095 21C20.8112 20.992 20.8634 20.9133 20.8674 20.8459C20.8715 20.7785 20.2884 19.1005 20.2884 19.1005C21.8488 17.9082 22.5 16.5944 22.5 14.9194ZM13.762 12.1391C13.2863 12.1391 12.9006 12.5161 12.9006 12.9812C12.9006 13.4462 13.2863 13.8232 13.762 13.8232C14.2378 13.8232 14.6235 13.4463 14.6235 12.9812C14.6235 12.5161 14.2378 12.1391 13.762 12.1391ZM18.3685 12.1391C17.8927 12.1391 17.507 12.5161 17.507 12.9812C17.507 13.4462 17.8927 13.8232 18.3685 13.8232C18.8444 13.8232 19.23 13.4463 19.23 12.9812C19.23 12.5161 18.8444 12.1391 18.3685 12.1391Z"
+                        fill="#31CE6F"
+                      />
+                    </svg>
+                  </button>
+                  <button class="btn btn-circle btn-outline border-zinc-700 hover:bg-zinc-800">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="20" viewBox="0 0 24 20" fill="none">
+                      <path
+                        d="M11.0162 3.58443C7.93754 2.30031 0 8.54879 0 13.8176C0 16.9022 3.9005 19.9999 10.3469 19.9999C18.2443 19.9999 22.0457 14.6252 20.734 11.9907C19.8975 10.311 17.7758 10.1639 17.6419 9.71376C17.5553 9.42252 18.6191 7.67506 17.4679 6.73514C15.5046 5.13206 12.1673 7.43678 11.7925 7.02638C11.5586 6.7702 12.676 4.27674 11.0162 3.58443Z"
+                        fill="#E31C34"
+                      />
+                      <path
+                        d="M16.9014 13.2084C17.1537 15.7871 14.1284 18.1866 10.1442 18.5678C6.16001 18.949 2.7257 17.1677 2.47344 14.589C2.22117 12.0103 5.24647 9.61085 9.23064 9.22961C13.2148 8.84836 16.6491 10.6297 16.9014 13.2084Z"
+                        fill="white"
+                      />
+                      <path
+                        fill-rule="evenodd"
+                        clip-rule="evenodd"
+                        d="M12.8515 13.3413C13.3392 15.0647 12.0723 16.922 10.0217 17.4895C7.97117 18.0571 5.91353 17.12 5.42584 15.3965C4.93816 13.6731 6.20511 11.8158 8.25566 11.2483C10.3062 10.6807 12.3639 11.6178 12.8515 13.3413ZM9.20417 14.4517C9.47528 15.0284 9.14086 15.7508 8.45722 16.0651C7.77357 16.3795 6.99959 16.1667 6.72848 15.59C6.45736 15.0132 6.79178 14.2908 7.47543 13.9765C8.15907 13.6622 8.93305 13.8749 9.20417 14.4517ZM10.1008 14.1517C10.3672 14.0292 10.4975 13.7478 10.3918 13.523C10.2862 13.2983 9.98462 13.2154 9.71823 13.3379C9.45185 13.4604 9.32155 13.7418 9.42719 13.9666C9.53283 14.1913 9.83441 14.2742 10.1008 14.1517Z"
+                        fill="black"
+                      />
+                      <path
+                        d="M16.3786 2.358C16.7437 2.26862 17.1264 2.22098 17.5215 2.22098C20.1385 2.22098 22.2599 4.31913 22.2599 6.90733C22.2599 7.47899 22.1568 8.02488 21.9688 8.5291C21.8025 8.97497 22.0331 9.46974 22.484 9.6342C22.9348 9.79867 23.4351 9.57055 23.6013 9.12468C23.8595 8.4326 24 7.68523 24 6.90733C24 3.36866 21.0995 0.5 17.5215 0.5C16.9844 0.5 16.4614 0.564829 15.9605 0.68742C15.4941 0.801592 15.2096 1.26812 15.325 1.72943C15.4404 2.19075 15.9122 2.47217 16.3786 2.358Z"
+                        fill="#FD9940"
+                      />
+                      <path
+                        d="M17.1474 5.36185C17.2666 5.33379 17.3917 5.31874 17.5215 5.31874C18.4086 5.31874 19.1277 6.02998 19.1277 6.90733C19.1277 7.09884 19.0939 7.28062 19.0324 7.44834C18.8688 7.89518 19.1024 8.38859 19.5542 8.55041C20.006 8.71224 20.5049 8.48119 20.6686 8.03435C20.7978 7.68145 20.8678 7.30153 20.8678 6.90733C20.8678 5.07951 19.3696 3.59776 17.5215 3.59776C17.255 3.59776 16.9947 3.62874 16.7445 3.68765C16.277 3.7977 15.9883 4.26169 16.0995 4.72401C16.2108 5.18633 16.6799 5.4719 17.1474 5.36185Z"
+                        fill="#FD9940"
+                      />
+                    </svg>
+                  </button>
+                  <button class="btn btn-circle btn-outline border-zinc-700 hover:bg-zinc-800">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                    >
+                      <path
+                        d="M12 20V4M12 4L6 10M12 4L18 10"
+                        stroke="white"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                    </svg>
+                  </button>
+                </div>
+                <div class="text-center md:text-right pt-10 leading-loose">
+                  <p>中国 · 江苏省 · 无锡市新吴区天安智慧城103-703</p>
+                  <p>FAX. +86-0510-8815 0371</p>
+                  <p>TEL. +86-181 1888 2229</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- copyright -->
+    <footer class="bg-primary">
+      <div class="px-4 lg:px-8 xl:px-16 2xl:px-32 py-11">
+        <div class="max-w-screen-3xl mx-auto">
+          <div class="sm:flex sm:items-center sm:justify-between">
+            <div class="flex justify-center sm:justify-start">
+              <div class="hidden md:block"><img src="images/logo-footer.svg" alt="" class="h-9" /></div>
+            </div>
+            <div class="text-black">
+              <p class="text-center md:text-right">本网站著作权属于ARJ CERAMICS Inc. 所有</p>
+              <p class="hidden md:block">
+                未经ARJ CERAMICS Inc.授权不得以复制、转载、散布或任何形式使用本网站所刊载的内容
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <!-- Swiper -->
+    <script>
+      var swiper = new Swiper('.mySwiper', {
+        spaceBetween: 30,
+        centeredSlides: true,
+        autoplay: {
+          delay: 2500,
+          disableOnInteraction: false
+        },
+        pagination: {
+          el: '.swiper-pagination',
+          clickable: true
+        }
+      })
+    </script>
+  </body>
+</html>

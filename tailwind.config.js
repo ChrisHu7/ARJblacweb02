@@ -4,7 +4,7 @@ module.exports = {
   theme: {
     extend: {
       screens: {
-        '3xl': '1920px'
+        '3xl': '1680px'
       }
     }
   },
@@ -52,8 +52,7 @@ module.exports = {
       }
     ]
   },
-  corePlugins: {
-    aspectRatio: false
-  },
-  plugins: [require('daisyui'), require('@tailwindcss/aspect-ratio')]
+
+  plugins: [require('daisyui')]
+  // plugins: [require('daisyui'), require('@tailwindcss/aspect-ratio')]
 }
