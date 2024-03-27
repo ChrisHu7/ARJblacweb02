@@ -2082,6 +2082,34 @@ input.tab:checked + .tab-content,
   top: 5rem;
 }
 
+.bottom-3\/4 {
+  bottom: 75%;
+}
+
+.-bottom-3\/4 {
+  bottom: -75%;
+}
+
+.top-3\/4 {
+  top: 75%;
+}
+
+.right-11 {
+  right: 2.75rem;
+}
+
+.right-10 {
+  right: 2.5rem;
+}
+
+.-left-10 {
+  left: -2.5rem;
+}
+
+.-left-14 {
+  left: -3.5rem;
+}
+
 .-z-0 {
   z-index: 0;
 }
@@ -2266,6 +2294,14 @@ input.tab:checked + .tab-content,
   width: 100%;
 }
 
+.w-56 {
+  width: 14rem;
+}
+
+.w-3\/4 {
+  width: 75%;
+}
+
 .max-w-2xl {
   max-width: 42rem;
 }
@@ -2309,8 +2345,16 @@ input.tab:checked + .tab-content,
   grid-template-columns: repeat(2, minmax(0, 1fr));
 }
 
+.grid-cols-4 {
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+}
+
 .grid-rows-1 {
   grid-template-rows: repeat(1, minmax(0, 1fr));
+}
+
+.flex-row {
+  flex-direction: row;
 }
 
 .flex-col {
@@ -2367,6 +2411,10 @@ input.tab:checked + .tab-content,
 
 .gap-8 {
   gap: 2rem;
+}
+
+.gap-12 {
+  gap: 3rem;
 }
 
 .gap-y-14 {
@@ -2446,6 +2494,10 @@ input.tab:checked + .tab-content,
   border-width: 0px;
 }
 
+.border-8 {
+  border-width: 8px;
+}
+
 .border-b {
   border-bottom-width: 1px;
 }
@@ -2502,6 +2554,11 @@ input.tab:checked + .tab-content,
 .border-zinc-700 {
   --tw-border-opacity: 1;
   border-color: rgb(63 63 70 / var(--tw-border-opacity));
+}
+
+.border-zinc-900 {
+  --tw-border-opacity: 1;
+  border-color: rgb(24 24 27 / var(--tw-border-opacity));
 }
 
 .bg-base-100 {
@@ -2690,6 +2747,21 @@ input.tab:checked + .tab-content,
   padding-bottom: 1.25rem;
 }
 
+.py-32 {
+  padding-top: 8rem;
+  padding-bottom: 8rem;
+}
+
+.py-16 {
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+}
+
+.py-20 {
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+}
+
 .pb-11 {
   padding-bottom: 2.75rem;
 }
@@ -2760,6 +2832,18 @@ input.tab:checked + .tab-content,
 
 .pt-8 {
   padding-top: 2rem;
+}
+
+.pb-6 {
+  padding-bottom: 1.5rem;
+}
+
+.pb-80 {
+  padding-bottom: 20rem;
+}
+
+.pb-60 {
+  padding-bottom: 15rem;
 }
 
 .text-center {
@@ -3186,6 +3270,14 @@ input.tab:checked + .tab-content,
 
   .xl\:w-60 {
     width: 15rem;
+  }
+
+  .xl\:w-2\/5 {
+    width: 40%;
+  }
+
+  .xl\:w-3\/5 {
+    width: 60%;
   }
 
   .xl\:grid-cols-4 {
