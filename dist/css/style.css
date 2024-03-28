@@ -1289,39 +1289,6 @@ input.tab:checked + .tab-content,
   display: block;
 }
 
-.table {
-  position: relative;
-  width: 100%;
-  border-radius: var(--rounded-box, 1rem);
-  text-align: left;
-  font-size: 0.875rem;
-  line-height: 1.25rem;
-}
-
-.table :where(.table-pin-rows thead tr) {
-  position: sticky;
-  top: 0px;
-  z-index: 1;
-  --tw-bg-opacity: 1;
-  background-color: var(--fallback-b1,oklch(var(--b1)/var(--tw-bg-opacity)));
-}
-
-.table :where(.table-pin-rows tfoot tr) {
-  position: sticky;
-  bottom: 0px;
-  z-index: 1;
-  --tw-bg-opacity: 1;
-  background-color: var(--fallback-b1,oklch(var(--b1)/var(--tw-bg-opacity)));
-}
-
-.table :where(.table-pin-cols tr th) {
-  position: sticky;
-  left: 0px;
-  right: 0px;
-  --tw-bg-opacity: 1;
-  background-color: var(--fallback-b1,oklch(var(--b1)/var(--tw-bg-opacity)));
-}
-
 .btn:active:hover,
   .btn:active:focus {
   animation: button-pop 0s ease-out;
@@ -1826,40 +1793,6 @@ input.tab:checked + .tab-content,
   color: var(--fallback-pc,oklch(var(--pc)/var(--tw-text-opacity)));
 }
 
-:is([dir="rtl"] .table) {
-  text-align: right;
-}
-
-.table :where(th, td) {
-  padding-left: 1rem;
-  padding-right: 1rem;
-  padding-top: 0.75rem;
-  padding-bottom: 0.75rem;
-  vertical-align: middle;
-}
-
-.table tr.active,
-  .table tr.active:nth-child(even),
-  .table-zebra tbody tr:nth-child(even) {
-  --tw-bg-opacity: 1;
-  background-color: var(--fallback-b2,oklch(var(--b2)/var(--tw-bg-opacity)));
-}
-
-.table :where(thead, tbody) :where(tr:not(:last-child)),
-    .table :where(thead, tbody) :where(tr:first-child:last-child) {
-  border-bottom-width: 1px;
-  --tw-border-opacity: 1;
-  border-bottom-color: var(--fallback-b2,oklch(var(--b2)/var(--tw-border-opacity)));
-}
-
-.table :where(thead, tfoot) {
-  white-space: nowrap;
-  font-size: 0.75rem;
-  line-height: 1rem;
-  font-weight: 700;
-  color: var(--fallback-bc,oklch(var(--bc)/0.6));
-}
-
 @keyframes toast-pop {
   0% {
     transform: scale(0.9);
@@ -2010,6 +1943,10 @@ input.tab:checked + .tab-content,
   position: relative;
 }
 
+.-left-14 {
+  left: -3.5rem;
+}
+
 .bottom-0 {
   bottom: 0px;
 }
@@ -2082,32 +2019,8 @@ input.tab:checked + .tab-content,
   top: 5rem;
 }
 
-.bottom-3\/4 {
-  bottom: 75%;
-}
-
-.-bottom-3\/4 {
-  bottom: -75%;
-}
-
 .top-3\/4 {
   top: 75%;
-}
-
-.right-11 {
-  right: 2.75rem;
-}
-
-.right-10 {
-  right: 2.5rem;
-}
-
-.-left-10 {
-  left: -2.5rem;
-}
-
-.-left-14 {
-  left: -3.5rem;
 }
 
 .-z-0 {
@@ -2151,10 +2064,6 @@ input.tab:checked + .tab-content,
 
 .flex {
   display: flex;
-}
-
-.table {
-  display: table;
 }
 
 .flow-root {
@@ -2278,6 +2187,10 @@ input.tab:checked + .tab-content,
   width: 6rem;
 }
 
+.w-3\/4 {
+  width: 75%;
+}
+
 .w-3\/5 {
   width: 60%;
 }
@@ -2286,20 +2199,16 @@ input.tab:checked + .tab-content,
   width: 10rem;
 }
 
+.w-56 {
+  width: 14rem;
+}
+
 .w-6 {
   width: 1.5rem;
 }
 
 .w-full {
   width: 100%;
-}
-
-.w-56 {
-  width: 14rem;
-}
-
-.w-3\/4 {
-  width: 75%;
 }
 
 .max-w-2xl {
@@ -2413,8 +2322,9 @@ input.tab:checked + .tab-content,
   gap: 2rem;
 }
 
-.gap-12 {
-  gap: 3rem;
+.gap-x-16 {
+  -moz-column-gap: 4rem;
+       column-gap: 4rem;
 }
 
 .gap-y-14 {
@@ -2427,10 +2337,6 @@ input.tab:checked + .tab-content,
 
 .overflow-hidden {
   overflow: hidden;
-}
-
-.overflow-x-auto {
-  overflow-x: auto;
 }
 
 .rounded {
@@ -2494,10 +2400,6 @@ input.tab:checked + .tab-content,
   border-width: 0px;
 }
 
-.border-8 {
-  border-width: 8px;
-}
-
 .border-b {
   border-bottom-width: 1px;
 }
@@ -2554,11 +2456,6 @@ input.tab:checked + .tab-content,
 .border-zinc-700 {
   --tw-border-opacity: 1;
   border-color: rgb(63 63 70 / var(--tw-border-opacity));
-}
-
-.border-zinc-900 {
-  --tw-border-opacity: 1;
-  border-color: rgb(24 24 27 / var(--tw-border-opacity));
 }
 
 .bg-base-100 {
@@ -2682,6 +2579,11 @@ input.tab:checked + .tab-content,
   padding-right: 3rem;
 }
 
+.px-16 {
+  padding-left: 4rem;
+  padding-right: 4rem;
+}
+
 .px-3 {
   padding-left: 0.75rem;
   padding-right: 0.75rem;
@@ -2732,6 +2634,11 @@ input.tab:checked + .tab-content,
   padding-bottom: 0.5rem;
 }
 
+.py-20 {
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+}
+
 .py-3 {
   padding-top: 0.75rem;
   padding-bottom: 0.75rem;
@@ -2747,19 +2654,14 @@ input.tab:checked + .tab-content,
   padding-bottom: 1.25rem;
 }
 
-.py-32 {
-  padding-top: 8rem;
-  padding-bottom: 8rem;
+.py-7 {
+  padding-top: 1.75rem;
+  padding-bottom: 1.75rem;
 }
 
-.py-16 {
-  padding-top: 4rem;
-  padding-bottom: 4rem;
-}
-
-.py-20 {
-  padding-top: 5rem;
-  padding-bottom: 5rem;
+.py-8 {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
 }
 
 .pb-11 {
@@ -2792,6 +2694,14 @@ input.tab:checked + .tab-content,
 
 .pb-5 {
   padding-bottom: 1.25rem;
+}
+
+.pb-6 {
+  padding-bottom: 1.5rem;
+}
+
+.pb-60 {
+  padding-bottom: 15rem;
 }
 
 .pb-8 {
@@ -2832,18 +2742,6 @@ input.tab:checked + .tab-content,
 
 .pt-8 {
   padding-top: 2rem;
-}
-
-.pb-6 {
-  padding-bottom: 1.5rem;
-}
-
-.pb-80 {
-  padding-bottom: 20rem;
-}
-
-.pb-60 {
-  padding-bottom: 15rem;
 }
 
 .text-center {
@@ -3264,6 +3162,14 @@ input.tab:checked + .tab-content,
     display: block;
   }
 
+  .xl\:w-2\/5 {
+    width: 40%;
+  }
+
+  .xl\:w-3\/5 {
+    width: 60%;
+  }
+
   .xl\:w-4\/5 {
     width: 80%;
   }
@@ -3272,12 +3178,8 @@ input.tab:checked + .tab-content,
     width: 15rem;
   }
 
-  .xl\:w-2\/5 {
-    width: 40%;
-  }
-
-  .xl\:w-3\/5 {
-    width: 60%;
+  .xl\:grid-cols-3 {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
   }
 
   .xl\:grid-cols-4 {
@@ -3295,6 +3197,11 @@ input.tab:checked + .tab-content,
 
   .xl\:pr-\[272px\] {
     padding-right: 272px;
+  }
+
+  .xl\:text-3xl {
+    font-size: 1.875rem;
+    line-height: 2.25rem;
   }
 }
 
