@@ -1,3 +1,16 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer base {
+  @font-face {
+    font-family: '思源宋体 Bold';
+    font-weight: 700;
+    src: url('https://at.alicdn.com/wf/webfont/HA30WFqZIonG/Pe0S2zbuidU9.woff2') format('woff2'),
+      url('https://at.alicdn.com/wf/webfont/HA30WFqZIonG/6GnFfXUmV0p4.woff') format('woff');
+    font-display: swap;
+  }
+  .sy {
+    font-family: '思源宋体 Bold';
+  }
+}

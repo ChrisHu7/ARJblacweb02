@@ -544,6 +544,21 @@ html {
   --border-btn: 1px;
 }
 
+@font-face {
+  font-family: '思源宋体 Bold';
+
+  font-weight: 700;
+
+  src: url('https://at.alicdn.com/wf/webfont/HA30WFqZIonG/Pe0S2zbuidU9.woff2') format('woff2'),
+      url('https://at.alicdn.com/wf/webfont/HA30WFqZIonG/6GnFfXUmV0p4.woff') format('woff');
+
+  font-display: swap;
+}
+
+.sy {
+  font-family: '思源宋体 Bold';
+}
+
 *, ::before, ::after {
   --tw-border-spacing-x: 0;
   --tw-border-spacing-y: 0;
@@ -2046,6 +2061,10 @@ input.tab:checked + .tab-content,
   margin-bottom: 1.5rem;
 }
 
+.mt-12 {
+  margin-top: 3rem;
+}
+
 .mt-5 {
   margin-top: 1.25rem;
 }
@@ -2171,6 +2190,10 @@ input.tab:checked + .tab-content,
   width: 3.5rem;
 }
 
+.w-16 {
+  width: 4rem;
+}
+
 .w-2\/3 {
   width: 66.666667%;
 }
@@ -2197,10 +2220,6 @@ input.tab:checked + .tab-content,
 
 .w-40 {
   width: 10rem;
-}
-
-.w-56 {
-  width: 14rem;
 }
 
 .w-6 {
@@ -2252,10 +2271,6 @@ input.tab:checked + .tab-content,
 
 .grid-cols-2 {
   grid-template-columns: repeat(2, minmax(0, 1fr));
-}
-
-.grid-cols-4 {
-  grid-template-columns: repeat(4, minmax(0, 1fr));
 }
 
 .grid-rows-1 {
@@ -2579,11 +2594,6 @@ input.tab:checked + .tab-content,
   padding-right: 3rem;
 }
 
-.px-16 {
-  padding-left: 4rem;
-  padding-right: 4rem;
-}
-
 .px-3 {
   padding-left: 0.75rem;
   padding-right: 0.75rem;
@@ -2863,6 +2873,11 @@ input.tab:checked + .tab-content,
   line-height: 1.75rem;
 }
 
+.\*\:text-sm > * {
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+}
+
 .\*\:font-normal > * {
   font-weight: 400;
 }
@@ -3058,6 +3073,16 @@ input.tab:checked + .tab-content,
   .md\:px-10 {
     padding-left: 2.5rem;
     padding-right: 2.5rem;
+  }
+
+  .md\:px-16 {
+    padding-left: 4rem;
+    padding-right: 4rem;
+  }
+
+  .md\:px-9 {
+    padding-left: 2.25rem;
+    padding-right: 2.25rem;
   }
 
   .md\:py-24 {
