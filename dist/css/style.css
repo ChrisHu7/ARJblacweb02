@@ -555,10 +555,6 @@ html {
   font-display: swap;
 }
 
-.sy {
-  font-family: '思源宋体 Bold';
-}
-
 *, ::before, ::after {
   --tw-border-spacing-x: 0;
   --tw-border-spacing-y: 0;
@@ -1820,6 +1816,20 @@ input.tab:checked + .tab-content,
   }
 }
 
+.btn-lg {
+  height: 4rem;
+  min-height: 4rem;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+  font-size: 1.125rem;
+}
+
+.btn-square:where(.btn-lg) {
+  height: 4rem;
+  width: 4rem;
+  padding: 0px;
+}
+
 .btn-circle:where(.btn-xs) {
   height: 1.5rem;
   width: 1.5rem;
@@ -1958,10 +1968,6 @@ input.tab:checked + .tab-content,
   position: relative;
 }
 
-.-left-14 {
-  left: -3.5rem;
-}
-
 .bottom-0 {
   bottom: 0px;
 }
@@ -2034,10 +2040,6 @@ input.tab:checked + .tab-content,
   top: 5rem;
 }
 
-.top-3\/4 {
-  top: 75%;
-}
-
 .-z-0 {
   z-index: 0;
 }
@@ -2050,6 +2052,11 @@ input.tab:checked + .tab-content,
 .mx-auto {
   margin-left: auto;
   margin-right: auto;
+}
+
+.my-12 {
+  margin-top: 3rem;
+  margin-bottom: 3rem;
 }
 
 .my-16 {
@@ -2178,6 +2185,10 @@ input.tab:checked + .tab-content,
   height: 100vh;
 }
 
+.h-\[9\/16\] {
+  height: 9/16;
+}
+
 .w-1\/2 {
   width: 50%;
 }
@@ -2210,10 +2221,6 @@ input.tab:checked + .tab-content,
   width: 6rem;
 }
 
-.w-3\/4 {
-  width: 75%;
-}
-
 .w-3\/5 {
   width: 60%;
 }
@@ -2228,6 +2235,10 @@ input.tab:checked + .tab-content,
 
 .w-full {
   width: 100%;
+}
+
+.w-48 {
+  width: 12rem;
 }
 
 .max-w-2xl {
@@ -2429,6 +2440,14 @@ input.tab:checked + .tab-content,
 
 .border-l {
   border-left-width: 1px;
+}
+
+.border-r {
+  border-right-width: 1px;
+}
+
+.border-r-0 {
+  border-right-width: 0px;
 }
 
 .border-t {
@@ -2674,6 +2693,10 @@ input.tab:checked + .tab-content,
   padding-bottom: 2rem;
 }
 
+.pb-10 {
+  padding-bottom: 2.5rem;
+}
+
 .pb-11 {
   padding-bottom: 2.75rem;
 }
@@ -2710,10 +2733,6 @@ input.tab:checked + .tab-content,
   padding-bottom: 1.5rem;
 }
 
-.pb-60 {
-  padding-bottom: 15rem;
-}
-
 .pb-8 {
   padding-bottom: 2rem;
 }
@@ -2744,6 +2763,10 @@ input.tab:checked + .tab-content,
 
 .pt-24 {
   padding-top: 6rem;
+}
+
+.pt-4 {
+  padding-top: 1rem;
 }
 
 .pt-5 {
@@ -3070,6 +3093,14 @@ input.tab:checked + .tab-content,
     justify-content: space-between;
   }
 
+  .md\:border-b-0 {
+    border-bottom-width: 0px;
+  }
+
+  .md\:border-r {
+    border-right-width: 1px;
+  }
+
   .md\:px-10 {
     padding-left: 2.5rem;
     padding-right: 2.5rem;
@@ -3185,14 +3216,6 @@ input.tab:checked + .tab-content,
 @media (min-width: 1280px) {
   .xl\:block {
     display: block;
-  }
-
-  .xl\:w-2\/5 {
-    width: 40%;
-  }
-
-  .xl\:w-3\/5 {
-    width: 60%;
   }
 
   .xl\:w-4\/5 {
