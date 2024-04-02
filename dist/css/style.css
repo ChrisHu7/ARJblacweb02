@@ -2185,10 +2185,6 @@ input.tab:checked + .tab-content,
   height: 100vh;
 }
 
-.h-\[9\/16\] {
-  height: 9/16;
-}
-
 .w-1\/2 {
   width: 50%;
 }
@@ -2229,16 +2225,16 @@ input.tab:checked + .tab-content,
   width: 10rem;
 }
 
+.w-48 {
+  width: 12rem;
+}
+
 .w-6 {
   width: 1.5rem;
 }
 
 .w-full {
   width: 100%;
-}
-
-.w-48 {
-  width: 12rem;
 }
 
 .max-w-2xl {
