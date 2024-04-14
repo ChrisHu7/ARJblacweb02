@@ -2280,6 +2280,10 @@ input.tab:checked + .tab-content,
   height: 100vh;
 }
 
+.h-\[calc\(100vh-136px\)\] {
+  height: calc(100vh - 136px);
+}
+
 .w-1\/2 {
   width: 50%;
 }
