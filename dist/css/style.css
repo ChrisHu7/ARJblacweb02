@@ -2131,6 +2131,10 @@ input.tab:checked + .tab-content,
   z-index: 0;
 }
 
+.col-span-2 {
+  grid-column: span 2 / span 2;
+}
+
 .mx-1 {
   margin-left: 0.25rem;
   margin-right: 0.25rem;
@@ -2452,12 +2456,12 @@ input.tab:checked + .tab-content,
        column-gap: 4rem;
 }
 
-.gap-y-14 {
-  row-gap: 3.5rem;
-}
-
 .gap-y-2 {
   row-gap: 0.5rem;
+}
+
+.gap-y-6 {
+  row-gap: 1.5rem;
 }
 
 .overflow-hidden {
@@ -2535,10 +2539,6 @@ input.tab:checked + .tab-content,
 
 .border-b-0 {
   border-bottom-width: 0px;
-}
-
-.border-b-2 {
-  border-bottom-width: 2px;
 }
 
 .border-l {
@@ -2810,12 +2810,12 @@ input.tab:checked + .tab-content,
   padding-bottom: 2rem;
 }
 
-.pb-10 {
-  padding-bottom: 2.5rem;
+.pb-0 {
+  padding-bottom: 0px;
 }
 
-.pb-11 {
-  padding-bottom: 2.75rem;
+.pb-10 {
+  padding-bottom: 2.5rem;
 }
 
 .pb-12 {
@@ -2892,6 +2892,10 @@ input.tab:checked + .tab-content,
 
 .pt-8 {
   padding-top: 2rem;
+}
+
+.pt-6 {
+  padding-top: 1.5rem;
 }
 
 .text-center {
@@ -3017,6 +3021,11 @@ input.tab:checked + .tab-content,
   color: rgb(24 24 27 / var(--tw-text-opacity));
 }
 
+.\*\:text-base > * {
+  font-size: 1rem;
+  line-height: 1.5rem;
+}
+
 .\*\:text-lg > * {
   font-size: 1.125rem;
   line-height: 1.75rem;
@@ -3056,15 +3065,6 @@ input.tab:checked + .tab-content,
   content: var(--tw-content);
   --tw-bg-opacity: 1;
   background-color: rgb(8 145 178 / var(--tw-bg-opacity));
-}
-
-.first\:border-t:first-child {
-  border-top-width: 1px;
-}
-
-.first\:border-zinc-700:first-child {
-  --tw-border-opacity: 1;
-  border-color: rgb(63 63 70 / var(--tw-border-opacity));
 }
 
 .hover\:border-zinc-500:hover {
@@ -3227,12 +3227,21 @@ input.tab:checked + .tab-content,
     justify-content: space-between;
   }
 
+  .md\:gap-x-14 {
+    -moz-column-gap: 3.5rem;
+         column-gap: 3.5rem;
+  }
+
   .md\:border-b-0 {
     border-bottom-width: 0px;
   }
 
   .md\:border-r {
     border-right-width: 1px;
+  }
+
+  .md\:border-t-0 {
+    border-top-width: 0px;
   }
 
   .md\:px-10 {
@@ -3250,6 +3259,11 @@ input.tab:checked + .tab-content,
     padding-right: 2.25rem;
   }
 
+  .md\:py-10 {
+    padding-top: 2.5rem;
+    padding-bottom: 2.5rem;
+  }
+
   .md\:py-24 {
     padding-top: 6rem;
     padding-bottom: 6rem;
@@ -3258,6 +3272,14 @@ input.tab:checked + .tab-content,
   .md\:py-36 {
     padding-top: 9rem;
     padding-bottom: 9rem;
+  }
+
+  .md\:pb-8 {
+    padding-bottom: 2rem;
+  }
+
+  .md\:pt-24 {
+    padding-top: 6rem;
   }
 
   .md\:pt-36 {
