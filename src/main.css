@@ -2,7 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 
-@layer base {
+@layer components {
   @font-face {
     font-family: '思源宋体 Bold';
     font-weight: 700;
@@ -27,5 +27,8 @@
   }
   h4 {
     @apply text-lg;
+  }
+  .btnx {
+    @apply border border-cyan-600 hover:border hover:border-cyan-600;
   }
 }

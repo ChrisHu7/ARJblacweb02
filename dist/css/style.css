@@ -544,37 +544,6 @@ html {
   --border-btn: 1px;
 }
 
-@font-face {
-  font-family: '思源宋体 Bold';
-
-  font-weight: 700;
-
-  src: url('https://at.alicdn.com/wf/webfont/HA30WFqZIonG/Pe0S2zbuidU9.woff2') format('woff2'),
-      url('https://at.alicdn.com/wf/webfont/HA30WFqZIonG/6GnFfXUmV0p4.woff') format('woff');
-
-  font-display: swap;
-}
-
-h1 {
-  font-size: 2.25rem;
-  line-height: 2.5rem;
-}
-
-h2 {
-  font-size: 1.875rem;
-  line-height: 2.25rem;
-}
-
-h3 {
-  font-size: 1.5rem;
-  line-height: 2rem;
-}
-
-h4 {
-  font-size: 1.125rem;
-  line-height: 1.75rem;
-}
-
 *, ::before, ::after {
   --tw-border-spacing-x: 0;
   --tw-border-spacing-y: 0;
@@ -2047,6 +2016,49 @@ input.tab:checked + .tab-content,
   margin-inline-start: -1px;
 }
 
+@font-face {
+  font-family: '思源宋体 Bold';
+
+  font-weight: 700;
+
+  src: url('https://at.alicdn.com/wf/webfont/HA30WFqZIonG/Pe0S2zbuidU9.woff2') format('woff2'),
+      url('https://at.alicdn.com/wf/webfont/HA30WFqZIonG/6GnFfXUmV0p4.woff') format('woff');
+
+  font-display: swap;
+}
+
+h1 {
+  font-size: 2.25rem;
+  line-height: 2.5rem;
+}
+
+h2 {
+  font-size: 1.875rem;
+  line-height: 2.25rem;
+}
+
+h3 {
+  font-size: 1.5rem;
+  line-height: 2rem;
+}
+
+h4 {
+  font-size: 1.125rem;
+  line-height: 1.75rem;
+}
+
+.btnx {
+  border-width: 1px;
+  --tw-border-opacity: 1;
+  border-color: rgb(8 145 178 / var(--tw-border-opacity));
+}
+
+.btnx:hover {
+  border-width: 1px;
+  --tw-border-opacity: 1;
+  border-color: rgb(8 145 178 / var(--tw-border-opacity));
+}
+
 .absolute {
   position: absolute;
 }
@@ -2272,16 +2284,16 @@ input.tab:checked + .tab-content,
   height: calc(100vh - 112px);
 }
 
+.h-\[calc\(100vh-136px\)\] {
+  height: calc(100vh - 136px);
+}
+
 .h-full {
   height: 100%;
 }
 
 .h-screen {
   height: 100vh;
-}
-
-.h-\[calc\(100vh-136px\)\] {
-  height: calc(100vh - 136px);
 }
 
 .w-1\/2 {
@@ -2894,12 +2906,12 @@ input.tab:checked + .tab-content,
   padding-top: 1.25rem;
 }
 
-.pt-8 {
-  padding-top: 2rem;
-}
-
 .pt-6 {
   padding-top: 1.5rem;
+}
+
+.pt-8 {
+  padding-top: 2rem;
 }
 
 .text-center {
@@ -2965,6 +2977,10 @@ input.tab:checked + .tab-content,
 
 .leading-8 {
   line-height: 2rem;
+}
+
+.leading-\[46px\] {
+  line-height: 46px;
 }
 
 .leading-loose {
