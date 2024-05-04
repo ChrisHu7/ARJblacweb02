@@ -40,21 +40,32 @@
   </head>
   <body>
     <!--Header-->
-    <div class="px-4 lg:px-8 xl:px-16 2xl:px-32 border-b border-zinc-800">
+    <div class="px-4 lg:px-8 xl:px-16 2xl:px-32 border-b border-zinc-800 bg-zinc-950/20 backdrop-blur-md">
       <div class="max-w-screen-3xl mx-auto relative">
         <header class="flex h-20 items-center justify-between">
           <div class="left">
             <img src="images/logo-header.svg" alt="" class="h-8" />
           </div>
-          <div class="nav">
-            <ul class="flex items-center justify-center h-20">
-              <li><a href="#" class="px-6">主营产品</a></li>
-              <li><a href="#" class="px-6">艾瑞杰</a></li>
-              <li><a href="#" class="px-6">市场解决方案</a></li>
-              <li><a href="#" class="px-6">资讯动态</a></li>
-              <li><a href="#" class="px-6">联系我们</a></li>
-            </ul>
-          </div>
+          <ul class="flex items-center justify-center h-20">
+            <li class="hvr-fade hover:!bg-zinc-800 relative" x-data="{ open: false }">
+              <a href="#" @click="open = true" class="block px-6 h-20 leading-[80px] hvr-underline-from-left">
+                主营产品
+              </a>
+              <ul x-show="open" @click.away="open = false" class="absolute bottom-0"></ul>
+            </li>
+            <li class="hvr-fade hover:!bg-zinc-800">
+              <a href="#" class="block px-6 h-20 leading-[80px] hvr-underline-from-left">市场解决方案</a>
+            </li>
+            <li class="hvr-fade hover:!bg-zinc-800">
+              <a href="#" class="block px-6 h-20 leading-[80px] hvr-underline-from-left">资讯动态</a>
+            </li>
+            <li class="hvr-fade hover:!bg-zinc-800">
+              <a href="#" class="block px-6 h-20 leading-[80px] hvr-underline-from-left">关于艾瑞杰</a>
+            </li>
+            <li class="hvr-fade hover:!bg-zinc-800">
+              <a href="#" class="block px-6 h-20 leading-[80px] hvr-underline-from-left">联系我们</a>
+            </li>
+          </ul>
           <div class="right gap-2">
             <a href="#" class="btn btn-ghost w-14 px-3 rounded-lg"><img src="images/home-icon.svg" alt="" /></a>
             <a href="#" class="btn btn-ghost w-14 px-3 rounded-lg"><img src="images/search-icon.svg" alt="" /></a>
@@ -74,7 +85,7 @@
                 <div class="swiper-wrapper">
                   <div
                     class="swiper-slide bg-cover bg-center w-full h-full"
-                    style="background-image: url(images/b1.jpg)"
+                    style="background-image: url(images/bg1.jpg)"
                   >
                     <div class="absolute w-2/3 bottom-0 left-0 text-3xl px-8 py-12 leading-relaxed noto-serif">
                       <sc-semibold>为半导体新能源领域提供石英石制品及解决方案，成为行业引领者</sc-semibold>
@@ -82,7 +93,7 @@
                   </div>
                   <div
                     class="swiper-slide bg-cover bg-center w-full h-full"
-                    style="background-image: url(images/b1.jpg)"
+                    style="background-image: url(images/bg2.jpg)"
                   >
                     <div class="absolute w-2/3 bottom-0 left-0 text-3xl px-8 py-12 leading-relaxed noto-serif">
                       <sc-semibold>为半导体新能源领域提供石英石制品及解决方案，成为行业引领者</sc-semibold>
@@ -90,16 +101,7 @@
                   </div>
                   <div
                     class="swiper-slide bg-cover bg-center w-full h-full"
-                    style="background-image: url(images/b1.jpg)"
-                  >
-                    <div class="absolute w-2/3 bottom-0 left-0 text-3xl px-8 py-12 leading-relaxed noto-serif">
-                      <sc-semibold>为半导体新能源领域提供石英石制品及解决方案，成为行业引领者</sc-semibold>
-                    </div>
-                  </div>
-
-                  <div
-                    class="swiper-slide bg-cover bg-center w-full h-full"
-                    style="background-image: url(images/b1.jpg)"
+                    style="background-image: url(images/bg3.jpg)"
                   >
                     <div class="absolute w-2/3 bottom-0 left-0 text-3xl px-8 py-12 leading-relaxed noto-serif">
                       <sc-semibold>为半导体新能源领域提供石英石制品及解决方案，成为行业引领者</sc-semibold>
@@ -242,18 +244,18 @@
           </div>
           <ul class="mt-8 grid gap-4 sm:grid-cols-2 xl:grid-cols-4">
             <li>
-              <a href="#" class="group block overflow-hidden">
+              <a href="#" class="group block overflow-hidden hvr-icon-spin w-full">
                 <div class="relative bg-zinc-800 rounded-3xl overflow-hidden p-10 text-center">
                   <h3 class="text-base text-zinc-500 pb-3 group-hover:text-white">分散剂</h3>
-                  <h1 class="text-2xl text-white group-hover:text-cyan-500">DOLAPIX CE 641</h1>
+                  <h1 class="text-2xl text-white group-hover:text-cyan-500">DOLAPIX CE 6411</h1>
                   <div class="absolute w-6 h-6 right-0 bottom-12">
                     <img src="images/r1.svg" alt="" />
                   </div>
                   <div class="absolute w-6 h-6 right-14 bottom-0">
                     <img src="images/r1.svg" alt="" />
                   </div>
-                  <button
-                    class="btn btn-primary hover:bg-neutral-900 bg-neutral-900 h-10 rounded-none rounded-tl-2xl border-0 absolute right-0 bottom-0"
+                  <div
+                    class="h-12 w-14 flex items-center justify-center bg-neutral-900 rounded-none rounded-tl-2xl absolute right-0 bottom-0"
                   >
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
@@ -261,27 +263,27 @@
                       viewBox="0 0 24 24"
                       stroke-width="1.5"
                       stroke="currentColor"
-                      class="w-6 h-6 group-hover:text-cyan-600"
+                      class="w-6 h-6 group-hover:text-cyan-600 hvr-icon"
                     >
                       <path stroke-linecap="round" stroke-linejoin="round" d="M12 4.5v15m7.5-7.5h-15" />
                     </svg>
-                  </button>
+                  </div>
                 </div>
               </a>
             </li>
             <li>
-              <a href="#" class="group block overflow-hidden">
+              <a href="#" class="group block overflow-hidden hvr-icon-spin w-full">
                 <div class="relative bg-zinc-800 rounded-3xl overflow-hidden p-10 text-center">
                   <h3 class="text-base text-zinc-500 pb-3 group-hover:text-white">分散剂</h3>
-                  <h1 class="text-2xl text-white group-hover:text-cyan-500">DOLAPIX CE 641</h1>
+                  <h1 class="text-2xl text-white group-hover:text-cyan-500">DOLAPIX CE 6411</h1>
                   <div class="absolute w-6 h-6 right-0 bottom-12">
                     <img src="images/r1.svg" alt="" />
                   </div>
                   <div class="absolute w-6 h-6 right-14 bottom-0">
                     <img src="images/r1.svg" alt="" />
                   </div>
-                  <button
-                    class="btn btn-primary hover:bg-neutral-900 bg-neutral-900 h-10 rounded-none rounded-tl-2xl border-0 absolute right-0 bottom-0"
+                  <div
+                    class="h-12 w-14 flex items-center justify-center bg-neutral-900 rounded-none rounded-tl-2xl absolute right-0 bottom-0"
                   >
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
@@ -289,27 +291,27 @@
                       viewBox="0 0 24 24"
                       stroke-width="1.5"
                       stroke="currentColor"
-                      class="w-6 h-6 group-hover:text-cyan-600"
+                      class="w-6 h-6 group-hover:text-cyan-600 hvr-icon"
                     >
                       <path stroke-linecap="round" stroke-linejoin="round" d="M12 4.5v15m7.5-7.5h-15" />
                     </svg>
-                  </button>
+                  </div>
                 </div>
               </a>
             </li>
             <li>
-              <a href="#" class="group block overflow-hidden">
+              <a href="#" class="group block overflow-hidden hvr-icon-spin w-full">
                 <div class="relative bg-zinc-800 rounded-3xl overflow-hidden p-10 text-center">
                   <h3 class="text-base text-zinc-500 pb-3 group-hover:text-white">分散剂</h3>
-                  <h1 class="text-2xl text-white group-hover:text-cyan-500">DOLAPIX CE 641</h1>
+                  <h1 class="text-2xl text-white group-hover:text-cyan-500">DOLAPIX CE 6411</h1>
                   <div class="absolute w-6 h-6 right-0 bottom-12">
                     <img src="images/r1.svg" alt="" />
                   </div>
                   <div class="absolute w-6 h-6 right-14 bottom-0">
                     <img src="images/r1.svg" alt="" />
                   </div>
-                  <button
-                    class="btn btn-primary hover:bg-neutral-900 bg-neutral-900 h-10 rounded-none rounded-tl-2xl border-0 absolute right-0 bottom-0"
+                  <div
+                    class="h-12 w-14 flex items-center justify-center bg-neutral-900 rounded-none rounded-tl-2xl absolute right-0 bottom-0"
                   >
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
@@ -317,27 +319,27 @@
                       viewBox="0 0 24 24"
                       stroke-width="1.5"
                       stroke="currentColor"
-                      class="w-6 h-6 group-hover:text-cyan-600"
+                      class="w-6 h-6 group-hover:text-cyan-600 hvr-icon"
                     >
                       <path stroke-linecap="round" stroke-linejoin="round" d="M12 4.5v15m7.5-7.5h-15" />
                     </svg>
-                  </button>
+                  </div>
                 </div>
               </a>
             </li>
             <li>
-              <a href="#" class="group block overflow-hidden">
+              <a href="#" class="group block overflow-hidden hvr-icon-spin w-full">
                 <div class="relative bg-zinc-800 rounded-3xl overflow-hidden p-10 text-center">
                   <h3 class="text-base text-zinc-500 pb-3 group-hover:text-white">分散剂</h3>
-                  <h1 class="text-2xl text-white group-hover:text-cyan-500">DOLAPIX CE 641</h1>
+                  <h1 class="text-2xl text-white group-hover:text-cyan-500">DOLAPIX CE 6411</h1>
                   <div class="absolute w-6 h-6 right-0 bottom-12">
                     <img src="images/r1.svg" alt="" />
                   </div>
                   <div class="absolute w-6 h-6 right-14 bottom-0">
                     <img src="images/r1.svg" alt="" />
                   </div>
-                  <button
-                    class="btn btn-primary hover:bg-neutral-900 bg-neutral-900 h-10 rounded-none rounded-tl-2xl border-0 absolute right-0 bottom-0"
+                  <div
+                    class="h-12 w-14 flex items-center justify-center bg-neutral-900 rounded-none rounded-tl-2xl absolute right-0 bottom-0"
                   >
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
@@ -345,11 +347,11 @@
                       viewBox="0 0 24 24"
                       stroke-width="1.5"
                       stroke="currentColor"
-                      class="w-6 h-6 group-hover:text-cyan-600"
+                      class="w-6 h-6 group-hover:text-cyan-600 hvr-icon"
                     >
                       <path stroke-linecap="round" stroke-linejoin="round" d="M12 4.5v15m7.5-7.5h-15" />
                     </svg>
-                  </button>
+                  </div>
                 </div>
               </a>
             </li>
@@ -436,12 +438,12 @@
             <div class="title uppercase text-5xl font-bold">OUR SERVICES</div>
           </div>
           <div class="grid mt-5 lg:grid-cols-4 gap-y-6 md:gap-x-14 lg:gap-10">
-            <a href="" class="card group bg-base-100 items-start">
+            <a href="" class="card group bg-base-100 items-start transition hover:duration-700 ease-in-out">
               <figure class="px-8 pt-10">
                 <img src="images/se1.svg" alt="Shoes" class="w-24 h-24" />
               </figure>
               <div class="card-body">
-                <h2 class="card-title text-2xl group-hover:text-cyan-500">提供产品定制服务</h2>
+                <h2 class="card-title text-2xl group-hover:text-cyan-500">11提供产品定制服务</h2>
                 <p class="text-zinc-500 group-hover:text-zinc-400 leading-relaxed">
                   为客户提供量身定制的产品，满足不断变化的市场需求，始终保持材料的先进性和前瞻性，以科技和创新不断驱动公司的发展
                 </p>
@@ -501,19 +503,27 @@
             <div class="flex-1 border-t md:border-t-0 border-zinc-700">
               <a
                 href="#"
-                class="group flex items-center justify-between px-0 md:px-10 py-10 hover:px-0 border-b border-zinc-700"
+                class="w-full group !flex items-center justify-between px-0 md:px-10 py-10 border-b border-zinc-700 hvr-underline-from-left before:!h-px"
               >
-                <div class="left">
-                  <h1 class="text-2xl font-bold pb-3 group-hover:text-cyan-500">1ブランド認知度調査</h1>
+                <div class="left transition group-hover:-translate-x-10 group-hover:duration-500">
+                  <h1 class="text-2xl font-bold pb-3 group-hover:text-cyan-500">111ブラン1ド認知度調査</h1>
                   <p class="text-zinc-500 group-hover:text-zinc-400">
                     商品の認知度や好感度を調査し、競合と比較した自社の立ち位置を明確化。
                   </p>
                 </div>
-                <div class="right-icon hidden sm:block">
-                  <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                <div
+                  class="right-icon hidden sm:block w-10 h-10 p-2.5 transition group-hover:translate-x-10 group-hover:duration-500 group-hover:bg-cyan-600 rounded-full"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="20"
+                    height="20"
+                    viewBox="0 0 20 20"
+                    fill="none"
+                    class="stroke-zinc-500 group-hover:stroke-white"
+                  >
                     <path
                       d="M4.16663 9.99984H15.8333M15.8333 9.99984L9.99996 4.1665M15.8333 9.99984L9.99996 15.8332"
-                      stroke="#71717A"
                       stroke-width="1.66667"
                       stroke-linecap="round"
                       stroke-linejoin="round"
@@ -523,19 +533,27 @@
               </a>
               <a
                 href="#"
-                class="group flex items-center justify-between px-0 md:px-10 py-10 hover:px-0 border-b border-zinc-700"
+                class="w-full group !flex items-center justify-between px-0 md:px-10 py-10 border-b border-zinc-700 hvr-underline-from-left before:!h-px"
               >
-                <div class="left">
-                  <h1 class="text-2xl font-bold pb-3 group-hover:text-cyan-500">1ブランド認知度調査</h1>
+                <div class="left transition group-hover:-translate-x-10 group-hover:duration-500">
+                  <h1 class="text-2xl font-bold pb-3 group-hover:text-cyan-500">111ブラン1ド認知度調査</h1>
                   <p class="text-zinc-500 group-hover:text-zinc-400">
                     商品の認知度や好感度を調査し、競合と比較した自社の立ち位置を明確化。
                   </p>
                 </div>
-                <div class="right-icon hidden sm:block">
-                  <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                <div
+                  class="right-icon hidden sm:block w-10 h-10 p-2.5 transition group-hover:translate-x-10 group-hover:duration-500 group-hover:bg-cyan-600 rounded-full"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="20"
+                    height="20"
+                    viewBox="0 0 20 20"
+                    fill="none"
+                    class="stroke-zinc-500 group-hover:stroke-white"
+                  >
                     <path
                       d="M4.16663 9.99984H15.8333M15.8333 9.99984L9.99996 4.1665M15.8333 9.99984L9.99996 15.8332"
-                      stroke="#71717A"
                       stroke-width="1.66667"
                       stroke-linecap="round"
                       stroke-linejoin="round"
@@ -545,19 +563,27 @@
               </a>
               <a
                 href="#"
-                class="group flex items-center justify-between px-0 md:px-10 py-10 hover:px-0 border-b border-zinc-700"
+                class="w-full group !flex items-center justify-between px-0 md:px-10 py-10 border-b border-zinc-700 hvr-underline-from-left before:!h-px"
               >
-                <div class="left">
-                  <h1 class="text-2xl font-bold pb-3 group-hover:text-cyan-500">1ブランド認知度調査</h1>
+                <div class="left transition group-hover:-translate-x-10 group-hover:duration-500">
+                  <h1 class="text-2xl font-bold pb-3 group-hover:text-cyan-500">111ブラン1ド認知度調査</h1>
                   <p class="text-zinc-500 group-hover:text-zinc-400">
                     商品の認知度や好感度を調査し、競合と比較した自社の立ち位置を明確化。
                   </p>
                 </div>
-                <div class="right-icon hidden sm:block">
-                  <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                <div
+                  class="right-icon hidden sm:block w-10 h-10 p-2.5 transition group-hover:translate-x-10 group-hover:duration-500 group-hover:bg-cyan-600 rounded-full"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="20"
+                    height="20"
+                    viewBox="0 0 20 20"
+                    fill="none"
+                    class="stroke-zinc-500 group-hover:stroke-white"
+                  >
                     <path
                       d="M4.16663 9.99984H15.8333M15.8333 9.99984L9.99996 4.1665M15.8333 9.99984L9.99996 15.8332"
-                      stroke="#71717A"
                       stroke-width="1.66667"
                       stroke-linecap="round"
                       stroke-linejoin="round"
@@ -567,19 +593,27 @@
               </a>
               <a
                 href="#"
-                class="group flex items-center justify-between px-0 md:px-10 py-10 hover:px-0 border-b border-zinc-700"
+                class="w-full group !flex items-center justify-between px-0 md:px-10 py-10 border-b border-zinc-700 hvr-underline-from-left before:!h-px"
               >
-                <div class="left">
-                  <h1 class="text-2xl font-bold pb-3 group-hover:text-cyan-500">1ブランド認知度調査</h1>
+                <div class="left transition group-hover:-translate-x-10 group-hover:duration-500">
+                  <h1 class="text-2xl font-bold pb-3 group-hover:text-cyan-500">111ブラン1ド認知度調査</h1>
                   <p class="text-zinc-500 group-hover:text-zinc-400">
                     商品の認知度や好感度を調査し、競合と比較した自社の立ち位置を明確化。
                   </p>
                 </div>
-                <div class="right-icon hidden sm:block">
-                  <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                <div
+                  class="right-icon hidden sm:block w-10 h-10 p-2.5 transition group-hover:translate-x-10 group-hover:duration-500 group-hover:bg-cyan-600 rounded-full"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="20"
+                    height="20"
+                    viewBox="0 0 20 20"
+                    fill="none"
+                    class="stroke-zinc-500 group-hover:stroke-white"
+                  >
                     <path
                       d="M4.16663 9.99984H15.8333M15.8333 9.99984L9.99996 4.1665M15.8333 9.99984L9.99996 15.8332"
-                      stroke="#71717A"
                       stroke-width="1.66667"
                       stroke-linecap="round"
                       stroke-linejoin="round"
@@ -785,6 +819,7 @@
         </div>
       </div>
     </footer>
+    <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.13.10/dist/cdn.min.js"></script>
     <!-- Swiper JS -->
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 

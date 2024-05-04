@@ -4,55 +4,219 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link href="css/style.css" rel="stylesheet" />
+    <link href="css/hover.css" rel="stylesheet" />
   </head>
-  <body class="">
-    <!--Header-->
-    <div class="w-full h-screen overflow-hidden bg-neutral-900">
-      <div class="px-4 lg:px-8 xl:px-16 2xl:px-32">
-        <div class="container mx-auto relative h-screen">
-          <!--Nav-->
-          <nav class="hidden absolute right-0 top-0 xl:block xl:w-60 h-full -z-0">
-            <div class="nav-box pt-20 h-full">
-              <div class="flex flex-col gap-y-2 h-full *:noto-serif">
-                <div class="relative grow bg-white rounded-xl text-zinc-900">
-                  <div class="text-lg font-bold px-6 py-4 border-b border-zinc-200">产品和服务</div>
-                  <div class="p-4">
-                    <div class="pb-3 text-sm">希望有一天唯因特能够成为中国优秀智能制造的标杆</div>
-                    <ul>
-                      <li><a href="" class="px-3 py-2 block rounded-xl">MOM</a></li>
-                      <li><a href="" class="px-3 py-2 block rounded-xl hover: bg-zinc-100">MCS</a></li>
-                      <li><a href="" class="px-3 py-2 block rounded-xl">EAP</a></li>
-                      <li><a href="" class="px-3 py-2 block rounded-xl">MTS</a></li>
-                    </ul>
-                    <div class="absolute right-4 bottom-4"><img src="images/pro1.svg" alt="" /></div>
+  <body>
+    <header class="px-4 lg:px-8 xl:px-16 2xl:px-32 border-b border-zinc-800 bg-zinc-950/20 backdrop-blur-md">
+      <nav class="max-w-screen-3xl mx-auto relative flex items-center justify-between h-20 z-50" aria-label="Global">
+        <div class="flex lg:flex-1">
+          <a href="#" class="-m-1.5 p-1.5">
+            <span class="sr-only">Your Company</span>
+            <img src="images/logo-header.svg" alt="" class="h-8" />
+          </a>
+        </div>
+        <!--mobie-->
+        <div class="flex lg:hidden">
+          <button type="button" class="-m-2.5 inline-flex items-center justify-center rounded-md p-2.5 text-gray-700">
+            <span class="sr-only">Open main menu</span>
+            <svg
+              class="h-6 w-6"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="1.5"
+              stroke="currentColor"
+              aria-hidden="true"
+            >
+              <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+            </svg>
+          </button>
+        </div>
+        <div class="hidden lg:flex">
+          <div class="relative">
+            <div class="hvr-fade hover:!bg-zinc-800 h-20" x-data="{ open: false }">
+              <a
+                href="#"
+                class="flex items-center text-base text-white px-6 h-20 leading-[80px] hvr-underline-from-left"
+                @click="open = true"
+                aria-expanded="false"
+              >
+                主营产品
+              </a>
+            </div>
+            <div
+              x-show="open"
+              @click.away="open = false"
+              class="absolute -left-8 top-full z-10 mt-3 w-screen max-w-md overflow-hidden rounded-3xl bg-zinc-800 shadow-lg ring-1 ring-gray-900/5 border border-zinc-700"
+            >
+              <div class="p-4">
+                <div
+                  class="group relative flex items-center gap-x-6 rounded-lg p-4 text-sm leading-6 hover:bg-zinc-900"
+                >
+                  <div
+                    class="flex h-11 w-11 flex-none items-center justify-center rounded-lg bg-zinc-900 group-hover:bg-white"
+                  >
+                    <svg
+                      class="h-6 w-6 text-cyan-600 group-hover:text-cyan-600"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      stroke-width="1.5"
+                      stroke="currentColor"
+                      aria-hidden="true"
+                    >
+                      <path stroke-linecap="round" stroke-linejoin="round" d="M10.5 6a7.5 7.5 0 107.5 7.5h-7.5V6z" />
+                      <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 10.5H21A7.5 7.5 0 0013.5 3v7.5z" />
+                    </svg>
+                  </div>
+                  <div class="flex-auto">
+                    <a href="#" class="block text-white text-base">
+                      新能源产品
+                      <span class="absolute inset-0"></span>
+                    </a>
+                    <p class="mt-1 text-zinc-500">为客户提的产品质量过硬，经久耐用</p>
                   </div>
                 </div>
-                <a href="" class="grow-0 bg-white rounded-xl text-zinc-900">
-                  <div class="text-lg font-bold px-6 py-4 border-b-0 border-zinc-200">关于唯因特</div>
+              </div>
+            </div>
+          </div>
+
+          <a href="#" class="text-base px-6 h-20 leading-[80px] text-white">市场解决方案</a>
+          <a href="#" class="text-base px-6 h-20 leading-[80px] text-white">资讯动态</a>
+          <a href="#" class="text-base px-6 h-20 leading-[80px] text-white">关于艾瑞杰</a>
+          <a href="#" class="text-base px-6 h-20 leading-[80px] text-white">联系我们</a>
+        </div>
+        <div class="hidden lg:flex lg:flex-1 lg:justify-end gap-2">
+          <a href="#" class="btn btn-ghost w-14 px-3 rounded-lg"><img src="images/home-icon.svg" alt="" /></a>
+          <a href="#" class="btn btn-ghost w-14 px-3 rounded-lg"><img src="images/search-icon.svg" alt="" /></a>
+        </div>
+      </nav>
+      <!-- Mobile menu, show/hide based on menu open state. -->
+      <div class="lg:hidden" role="dialog" aria-modal="true">
+        <!-- Background backdrop, show/hide based on slide-over state. -->
+        <div class="fixed inset-0 z-10"></div>
+        <div
+          class="fixed inset-y-0 right-0 z-10 w-full overflow-y-auto bg-white px-6 py-6 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10"
+        >
+          <div class="flex items-center justify-between">
+            <a href="#" class="-m-1.5 p-1.5">
+              <span class="sr-only">Your Company</span>
+              <img class="h-8 w-auto" src="https://tailwindui.com/img/logos/mark.svg?color=indigo&shade=600" alt="" />
+            </a>
+            <button type="button" class="-m-2.5 rounded-md p-2.5 text-gray-700">
+              <span class="sr-only">Close menu</span>
+              <svg
+                class="h-6 w-6"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                aria-hidden="true"
+              >
+                <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+              </svg>
+            </button>
+          </div>
+          <div class="mt-6 flow-root">
+            <div class="-my-6 divide-y divide-gray-500/10">
+              <div class="space-y-2 py-6">
+                <div class="-mx-3">
+                  <button
+                    type="button"
+                    class="flex w-full items-center justify-between rounded-lg py-2 pl-3 pr-3.5 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
+                    aria-controls="disclosure-1"
+                    aria-expanded="false"
+                  >
+                    Product
+                    <!--
+                  Expand/collapse icon, toggle classes based on menu open state.
+
+                  Open: "rotate-180", Closed: ""
+                -->
+                    <svg class="h-5 w-5 flex-none" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                      <path
+                        fill-rule="evenodd"
+                        d="M5.23 7.21a.75.75 0 011.06.02L10 11.168l3.71-3.938a.75.75 0 111.08 1.04l-4.25 4.5a.75.75 0 01-1.08 0l-4.25-4.5a.75.75 0 01.02-1.06z"
+                        clip-rule="evenodd"
+                      />
+                    </svg>
+                  </button>
+                  <!-- 'Product' sub-menu, show/hide based on menu state. -->
+                  <div class="mt-2 space-y-2" id="disclosure-1">
+                    <a
+                      href="#"
+                      class="block rounded-lg py-2 pl-6 pr-3 text-sm font-semibold leading-7 text-gray-900 hover:bg-gray-50"
+                    >
+                      Analytics
+                    </a>
+                    <a
+                      href="#"
+                      class="block rounded-lg py-2 pl-6 pr-3 text-sm font-semibold leading-7 text-gray-900 hover:bg-gray-50"
+                    >
+                      Engagement
+                    </a>
+                    <a
+                      href="#"
+                      class="block rounded-lg py-2 pl-6 pr-3 text-sm font-semibold leading-7 text-gray-900 hover:bg-gray-50"
+                    >
+                      Security
+                    </a>
+                    <a
+                      href="#"
+                      class="block rounded-lg py-2 pl-6 pr-3 text-sm font-semibold leading-7 text-gray-900 hover:bg-gray-50"
+                    >
+                      Integrations
+                    </a>
+                    <a
+                      href="#"
+                      class="block rounded-lg py-2 pl-6 pr-3 text-sm font-semibold leading-7 text-gray-900 hover:bg-gray-50"
+                    >
+                      Automations
+                    </a>
+                    <a
+                      href="#"
+                      class="block rounded-lg py-2 pl-6 pr-3 text-sm font-semibold leading-7 text-gray-900 hover:bg-gray-50"
+                    >
+                      Watch demo
+                    </a>
+                    <a
+                      href="#"
+                      class="block rounded-lg py-2 pl-6 pr-3 text-sm font-semibold leading-7 text-gray-900 hover:bg-gray-50"
+                    >
+                      Contact sales
+                    </a>
+                  </div>
+                </div>
+                <a
+                  href="#"
+                  class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
+                >
+                  Features
                 </a>
-                <a href="" class="grow-0 bg-white rounded-xl text-zinc-900">
-                  <div class="text-lg font-bold px-6 py-4 border-b-0 border-zinc-200">市场解决方案</div>
+                <a
+                  href="#"
+                  class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
+                >
+                  Marketplace
                 </a>
-                <a href="" class="grow-0 bg-white rounded-xl text-zinc-900">
-                  <div class="text-lg font-bold px-6 py-4 border-b-0 border-zinc-200">资讯动态</div>
+                <a
+                  href="#"
+                  class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
+                >
+                  Company
                 </a>
-                <a href="" class="grow-0 bg-cyan-500 rounded-xl text-zinc-900">
-                  <div class="text-lg font-bold px-6 py-4 border-b-0 border-zinc-200"><sc-bold>联系我们</sc-bold></div>
+              </div>
+              <div class="py-6">
+                <a
+                  href="#"
+                  class="-mx-3 block rounded-lg px-3 py-2.5 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
+                >
+                  Log in
                 </a>
               </div>
             </div>
-          </nav>
+          </div>
         </div>
       </div>
-    </div>
-    <div class="px-4 lg:px-8 xl:px-16 2xl:px-32">
-      <div class="max-w-screen-3xl mx-auto relative h-screen"></div>
-    </div>
-
-    https://mech.w3.kanazawa-u.ac.jp/about/ https://zero-fut-sakai.com/feature/ https://www.jbnet.jp/service
-    https://www.chibabank.co.jp/job/introduction/ https://www.hoshizaki.co.jp/design/
-    https://www.cerabea.co.jp/product/156/ https://byd.co.jp/products/j6/ https://r-reha.jp/about/
-    https://claskahouse.jp/company https://www.fuji-koeki.co.jp/recruit/ https://onered.jp/business/realestate/
-    https://jp.corp-sansan.com/recruit/midcareer/people/ https://www.fuji-koeki.co.jp/business/
+    </header>
+    <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.13.10/dist/cdn.min.js"></script>
   </body>
 </html>
