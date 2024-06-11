@@ -60,65 +60,53 @@
       }
     </style>
   </head>
-  <body class="">
+  <body>
     <!--Header-->
-    <div class="w-full overflow-hidden bg-neutral-900">
-      <div class="px-4 lg:px-8 xl:px-16 2xl:px-32">
-        <div class="max-w-screen-3xl mx-auto relative">
-          <header class="flex h-20 items-center justify-between">
-            <div class="left">
-              <img src="images/logo-header.svg" alt="" class="h-8" />
-            </div>
-            <div class="right gap-2">
-              <a href="#" class="btn btn-ghost w-14 px-3"><img src="images/home-icon.svg" alt="" /></a>
-              <a href="#" class="btn btn-ghost w-14 px-3"><img src="images/search-icon.svg" alt="" /></a>
-              <a href="#" class="btn btn-ghost w-14 px-3"><img src="images/translate-icon.svg" alt="" /></a>
-            </div>
-          </header>
-          <!--Banner-->
-          <div class="xl:pr-[272px]">
-            <div
-              class="flex flex-col h-64 bg-zinc-800 rounded-3xl overflow-hidden justify-end bg-no-repeat bg-right"
-              style="background-image: url(images/about-banner.svg)"
-            >
-              <div class="text-white px-12 pb-12">
-                <img src="images/about-title.svg" class="h-16 mb-6" alt="" />
-                <p class="text-lg">当社は「商社」と「メーカー」、2つの顔を併せ持っています。</p>
-              </div>
-            </div>
+    <div class="px-4 lg:px-8 xl:px-16 2xl:px-32 border-b border-zinc-800 bg-zinc-950/20 backdrop-blur-md">
+      <div class="max-w-screen-3xl mx-auto relative">
+        <header class="flex h-20 items-center justify-between">
+          <div class="left">
+            <img src="images/logo-header.svg" alt="" class="h-8" />
           </div>
-          <!--Nav-->
-          <nav class="hidden absolute right-0 top-0 xl:block xl:w-60 h-full -z-0">
-            <div class="nav-box pt-20 h-full">
-              <div class="flex flex-col gap-y-2 h-full *:noto-serif">
-                <div class="relative grow bg-white rounded-xl text-zinc-900">
-                  <div class="text-lg font-bold px-6 py-4 border-b border-zinc-200">产品和服务</div>
-                  <div class="p-4">
-                    <div class="pb-3 text-xs">主要涉及半导体、太阳能、光纤、LED、光学、光通讯和电子化学等多个领域</div>
-                    <ul>
-                      <li><a href="" class="px-3 py-2 block rounded-xl">仪器设备</a></li>
-                      <li><a href="" class="px-3 py-2 block rounded-xl hover: bg-zinc-100">匣钵系列</a></li>
-                      <li><a href="" class="px-3 py-2 block rounded-xl">新能源系列</a></li>
-                      <li><a href="" class="px-3 py-2 block rounded-xl">技术陶瓷系列</a></li>
-                    </ul>
-                    <div class="absolute right-4 bottom-4"><img src="images/pro1.svg" alt="" /></div>
-                  </div>
-                </div>
-                <a href="" class="grow-0 bg-white rounded-xl text-zinc-900">
-                  <div class="text-lg font-bold px-6 py-4 border-b-0 border-zinc-200">关于ARJ</div>
-                </a>
-                <a href="" class="grow-0 bg-white rounded-xl text-zinc-900">
-                  <div class="text-lg font-bold px-6 py-4 border-b-0 border-zinc-200">市场解决方案</div>
-                </a>
-                <a href="" class="grow-0 bg-white rounded-xl text-zinc-900">
-                  <div class="text-lg font-bold px-6 py-4 border-b-0 border-zinc-200">资讯动态</div>
-                </a>
-                <a href="" class="grow-0 bg-cyan-500 rounded-xl text-zinc-900">
-                  <div class="text-lg font-bold px-6 py-4 border-b-0 border-zinc-200"><sc-bold>联系我们</sc-bold></div>
-                </a>
-              </div>
-            </div>
-          </nav>
+          <ul class="flex items-center justify-center h-20">
+            <li class="hvr-fade hover:!bg-zinc-800 relative" x-data="{ open: false }">
+              <a href="#" @click="open = true" class="block px-6 h-20 leading-[80px] hvr-underline-from-left">
+                主营产品
+              </a>
+              <ul x-show="open" @click.away="open = false" class="absolute bottom-0"></ul>
+            </li>
+            <li class="hvr-fade hover:!bg-zinc-800">
+              <a href="#" class="block px-6 h-20 leading-[80px] hvr-underline-from-left">市场解决方案</a>
+            </li>
+            <li class="hvr-fade hover:!bg-zinc-800">
+              <a href="#" class="block px-6 h-20 leading-[80px] hvr-underline-from-left">资讯动态</a>
+            </li>
+            <li class="hvr-fade hover:!bg-zinc-800">
+              <a href="#" class="block px-6 h-20 leading-[80px] hvr-underline-from-left">关于艾瑞杰</a>
+            </li>
+            <li class="hvr-fade hover:!bg-zinc-800">
+              <a href="#" class="block px-6 h-20 leading-[80px] hvr-underline-from-left">联系我们</a>
+            </li>
+          </ul>
+          <div class="right gap-2">
+            <a href="#" class="btn btn-ghost w-14 px-3 rounded-lg"><img src="images/home-icon.svg" alt="" /></a>
+            <a href="#" class="btn btn-ghost w-14 px-3 rounded-lg"><img src="images/search-icon.svg" alt="" /></a>
+          </div>
+        </header>
+      </div>
+    </div>
+
+    <div class="px-4 lg:px-8 xl:px-16 2xl:px-32">
+      <div class="max-w-screen-3xl mx-auto relative">
+        <!--Banner-->
+        <div
+          class="flex flex-col h-64 bg-zinc-800 rounded-3xl overflow-hidden justify-end bg-no-repeat bg-right"
+          style="background-image: url(images/about-banner.svg)"
+        >
+          <div class="text-white px-12 pb-12">
+            <img src="images/about-title.svg" class="h-16 mb-6" alt="" />
+            <p class="text-lg">当社は「商社」と「メーカー」、2つの顔を併せ持っています。</p>
+          </div>
         </div>
       </div>
     </div>
