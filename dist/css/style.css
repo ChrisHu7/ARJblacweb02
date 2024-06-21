@@ -2597,6 +2597,10 @@ h4 {
   max-width: 42rem;
 }
 
+.max-w-4xl {
+  max-width: 56rem;
+}
+
 .max-w-52 {
   max-width: 13rem;
 }
@@ -2607,14 +2611,6 @@ h4 {
 
 .max-w-screen-3xl {
   max-width: 1680px;
-}
-
-.max-w-3xl {
-  max-width: 48rem;
-}
-
-.max-w-4xl {
-  max-width: 56rem;
 }
 
 .flex-1 {
@@ -3280,10 +3276,6 @@ h4 {
 
 .pt-14 {
   padding-top: 3.5rem;
-}
-
-.pt-16 {
-  padding-top: 4rem;
 }
 
 .pt-2 {
