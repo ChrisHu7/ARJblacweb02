@@ -4,14 +4,15 @@
 
 @layer components {
   @font-face {
-    font-family: '思源宋体 Bold';
-    font-weight: 700;
-    src: url('https://at.alicdn.com/wf/webfont/HA30WFqZIonG/Pe0S2zbuidU9.woff2') format('woff2'),
-      url('https://at.alicdn.com/wf/webfont/HA30WFqZIonG/6GnFfXUmV0p4.woff') format('woff');
+    font-family: 'sy';
+    font-style: normal;
     font-display: swap;
+    src: url(fonts/SourceHanSerifSC-VF.woff2) format('woff2');
   }
   .sy {
-    font-family: '思源宋体 Bold';
+    font-family: 'sy';
+    /* font-weight: bold; */
+    font-style: normal;
   }
   h1 {
     @apply text-4xl;
@@ -30,5 +31,15 @@
   }
   .btnx {
     @apply border border-cyan-600 hover:border hover:border-cyan-600;
+  }
+  .swiper-pagination-bullet {
+    width: 16px !important;
+    height: 3px !important;
+    border-radius: 0 !important;
+    background-color: #ffffff !important;
+  }
+  .swiper-pagination-bullet-active {
+    width: 32px !important;
+    background-color: #06b6d4 !important;
   }
 }
