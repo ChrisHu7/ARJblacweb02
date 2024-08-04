@@ -3629,6 +3629,10 @@ h4 {
   gap: 2.5rem;
 }
 
+.gap-12 {
+  gap: 3rem;
+}
+
 .gap-16 {
   gap: 4rem;
 }
@@ -3655,10 +3659,6 @@ h4 {
 
 .gap-8 {
   gap: 2rem;
-}
-
-.gap-12 {
-  gap: 3rem;
 }
 
 .gap-x-16 {
@@ -3965,6 +3965,10 @@ h4 {
   background-color: rgb(39 39 42 / var(--tw-bg-opacity));
 }
 
+.bg-zinc-800\/30 {
+  background-color: rgb(39 39 42 / 0.3);
+}
+
 .bg-zinc-800\/40 {
   background-color: rgb(39 39 42 / 0.4);
 }
@@ -3976,15 +3980,6 @@ h4 {
 
 .bg-zinc-950\/20 {
   background-color: rgb(9 9 11 / 0.2);
-}
-
-.bg-zinc-700 {
-  --tw-bg-opacity: 1;
-  background-color: rgb(63 63 70 / var(--tw-bg-opacity));
-}
-
-.bg-zinc-800\/30 {
-  background-color: rgb(39 39 42 / 0.3);
 }
 
 .bg-gradient-to-r {
@@ -4232,6 +4227,10 @@ h4 {
   padding-bottom: 3rem;
 }
 
+.pb-2 {
+  padding-bottom: 0.5rem;
+}
+
 .pb-20 {
   padding-bottom: 5rem;
 }
@@ -4318,10 +4317,6 @@ h4 {
 
 .pt-6 {
   padding-top: 1.5rem;
-}
-
-.pt-7 {
-  padding-top: 1.75rem;
 }
 
 .pt-8 {
