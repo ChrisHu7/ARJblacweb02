@@ -3293,6 +3293,10 @@ h4 {
   margin-top: 2rem;
 }
 
+.mt-9 {
+  margin-top: 2.25rem;
+}
+
 .block {
   display: block;
 }
@@ -3780,6 +3784,11 @@ h4 {
 .rounded-t-2xl {
   border-top-left-radius: 1rem;
   border-top-right-radius: 1rem;
+}
+
+.rounded-t-3xl {
+  border-top-left-radius: 1.5rem;
+  border-top-right-radius: 1.5rem;
 }
 
 .rounded-bl-3xl {
