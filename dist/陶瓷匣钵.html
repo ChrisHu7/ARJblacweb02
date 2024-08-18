@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link href="css/style.css" rel="stylesheet" />
+    <link href="css/hover.css" rel="stylesheet" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -15,241 +16,194 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <style>
+      .noto-serif sc-semibold {
+        font-family: 'Noto Serif SC', serif;
+        font-weight: 600;
+        font-style: normal;
+      }
+      .noto-serif sc-bold {
+        font-family: 'Noto Serif SC', serif;
+        font-weight: 700;
+        font-style: normal;
+      }
+      .silkscreen-regular {
+        font-family: 'Silkscreen', sans-serif;
+        font-weight: 400;
+        font-style: normal;
+      }
+      .silkscreen-bold {
+        font-family: 'Silkscreen', sans-serif;
+        font-weight: 700;
+        font-style: normal;
+      }
+      .foldit-bold {
+        font-family: 'Foldit', sans-serif;
+        font-optical-sizing: auto;
+        font-weight: 700;
+        font-style: normal;
+      }
+      .pixelify-sans-bold {
+        font-family: 'Pixelify Sans', sans-serif;
+        font-optical-sizing: auto;
+        font-weight: 700;
+        font-style: normal;
+      }
+      .swiper-pagination-bullet {
+        width: 16px;
+        height: 3px;
+        border-radius: 0;
+        background-color: #ffffff;
+      }
+      .swiper-pagination-bullet-active {
+        width: 32px;
+        background-color: #06b6d4;
+      }
+    </style>
   </head>
   <body class="">
     <!--Header-->
-    <div class="w-full overflow-hidden bg-neutral-900">
-      <div class="px-4 lg:px-8 xl:px-16 2xl:px-32">
-        <div class="max-w-screen-3xl mx-auto relative">
-          <header class="flex h-20 items-center justify-between">
-            <div class="left">
-              <img src="images/logo-header.svg" alt="" class="h-8" />
-            </div>
-            <div class="right gap-2">
-              <a href="#" class="btn btn-ghost w-14 px-3"><img src="images/home-icon.svg" alt="" /></a>
-              <a href="#" class="btn btn-ghost w-14 px-3"><img src="images/search-icon.svg" alt="" /></a>
-              <a href="#" class="btn btn-ghost w-14 px-3"><img src="images/translate-icon.svg" alt="" /></a>
-            </div>
-          </header>
-          <!--Banner-->
-          <div class="xl:pr-[272px]">
-            <div
-              class="flex flex-col h-64 bg-zinc-800 rounded-3xl overflow-hidden justify-end bg-no-repeat bg-right"
-              style="background-image: url(images/about-banner.svg)"
-            >
-              <div class="text-white px-12 pb-12">
-                <img src="images/products-title.svg" class="h-16 mb-6" alt="" />
-                <p class="text-lg">当社は「商社」と「メーカー」、2つの顔を併せ持っています。</p>
-              </div>
-            </div>
+    <div class="px-4 lg:px-8 xl:px-16 2xl:px-32 border-b border-zinc-800 bg-zinc-950/20 backdrop-blur-md">
+      <div class="max-w-screen-3xl mx-auto relative">
+        <header class="flex h-20 items-center justify-between">
+          <div class="left">
+            <img src="images/logo-header.svg" alt="" class="h-8" />
           </div>
-          <!--Nav-->
-          <nav class="hidden absolute right-0 top-0 xl:block xl:w-60 h-full -z-0">
-            <div class="nav-box pt-20 h-full">
-              <div class="flex flex-col gap-y-2 h-full *:noto-serif">
-                <div class="relative grow bg-white rounded-xl text-zinc-900">
-                  <div class="text-lg font-bold px-6 py-4 border-b border-zinc-200">产品和服务</div>
-                  <div class="p-4">
-                    <div class="pb-3 text-xs">主要涉及半导体、太阳能、光纤、LED、光学、光通讯和电子化学等多个领域</div>
-                    <ul>
-                      <li><a href="" class="px-3 py-2 block rounded-xl">仪器设备</a></li>
-                      <li><a href="" class="px-3 py-2 block rounded-xl hover: bg-zinc-100">匣钵系列</a></li>
-                      <li><a href="" class="px-3 py-2 block rounded-xl">新能源系列</a></li>
-                      <li><a href="" class="px-3 py-2 block rounded-xl">技术陶瓷系列</a></li>
-                    </ul>
-                    <div class="absolute right-4 bottom-4"><img src="images/pro1.svg" alt="" /></div>
-                  </div>
-                </div>
-                <a href="" class="grow-0 bg-white rounded-xl text-zinc-900">
-                  <div class="text-lg font-bold px-6 py-4 border-b-0 border-zinc-200">关于ARJ</div>
-                </a>
-                <a href="" class="grow-0 bg-white rounded-xl text-zinc-900">
-                  <div class="text-lg font-bold px-6 py-4 border-b-0 border-zinc-200">市场解决方案</div>
-                </a>
-                <a href="" class="grow-0 bg-white rounded-xl text-zinc-900">
-                  <div class="text-lg font-bold px-6 py-4 border-b-0 border-zinc-200">资讯动态</div>
-                </a>
-                <a href="" class="grow-0 bg-cyan-500 rounded-xl text-zinc-900">
-                  <div class="text-lg font-bold px-6 py-4 border-b-0 border-zinc-200"><sc-bold>联系我们</sc-bold></div>
-                </a>
-              </div>
-            </div>
-          </nav>
+          <ul class="flex items-center justify-center h-20">
+            <li class="hvr-fade hover:!bg-zinc-800 relative" x-data="{ open: false }">
+              <a href="#" @click="open = true" class="block px-6 h-20 leading-[80px] hvr-underline-from-left">
+                主营产品
+              </a>
+              <ul x-show="open" @click.away="open = false" class="absolute bottom-0"></ul>
+            </li>
+            <li class="hvr-fade hover:!bg-zinc-800">
+              <a href="#" class="block px-6 h-20 leading-[80px] hvr-underline-from-left">市场解决方案</a>
+            </li>
+            <li class="hvr-fade hover:!bg-zinc-800">
+              <a href="#" class="block px-6 h-20 leading-[80px] hvr-underline-from-left">资讯动态</a>
+            </li>
+            <li class="hvr-fade hover:!bg-zinc-800">
+              <a href="#" class="block px-6 h-20 leading-[80px] hvr-underline-from-left">关于艾瑞杰</a>
+            </li>
+            <li class="hvr-fade hover:!bg-zinc-800">
+              <a href="#" class="block px-6 h-20 leading-[80px] hvr-underline-from-left">联系我们</a>
+            </li>
+          </ul>
+          <div class="right gap-2">
+            <a href="#" class="btn btn-ghost w-14 px-3 rounded-lg"><img src="images/home-icon.svg" alt="" /></a>
+            <a href="#" class="btn btn-ghost w-14 px-3 rounded-lg"><img src="images/search-icon.svg" alt="" /></a>
+          </div>
+        </header>
+      </div>
+    </div>
+
+    <div class="px-4 lg:px-8 xl:px-16 2xl:px-32 bg-neutral-900 pt-6">
+      <div class="max-w-screen-3xl mx-auto relative">
+        <div
+          class="flex flex-col h-64 bg-zinc-800 rounded-3xl overflow-hidden justify-end bg-no-repeat bg-right"
+          style="background-image: url(images/about-banner.svg)"
+        >
+          <div class="text-white px-12 pb-12">
+            <img src="images/about-title.svg" class="h-16 mb-6" alt="" />
+            <p class="text-lg">当社は「商社」と「メーカー」、2つの顔を併せ持っています。</p>
+          </div>
         </div>
       </div>
     </div>
 
     <!--Content-->
-    <div class="px-4 lg:px-8 xl:px-16 2xl:px-32 bg-zinc-900 *:text-sm">
-      <div class="max-w-screen-3xl mx-auto py-20">
-        <div class="pb-10 w-full max-w-4xl mx-auto">
-          <div role="tablist" class="tabs tabs-boxed h-12 border border-zinc-700">
-            <a role="tab" class="tab h-full hover:rounded-xl hover:bg-zinc-900">工具涂层</a>
-            <a role="tab" class="tab h-full hover:rounded-xl hover:bg-zinc-900">模具涂层</a>
-            <a role="tab" class="tab tab-active h-full !rounded-xl">零部件涂层</a>
-            <a role="tab" class="tab h-full hover:rounded-xl hover:bg-zinc-900">等离子渗氮技术</a>
+    <div class="px-4 lg:px-8 xl:px-16 2xl:px-32 bg-zinc-900">
+      <div class="max-w-screen-3xl mx-auto">
+        <h1 class="text-4xl font-bold text-white py-12 text-center">特殊匣钵定制</h1>
+        <div class="flex flex-col md:flex-row gap-6 lg:gap-12 xl:gap-32 border-b border-zinc-700 pb-10">
+          <div class="left w-full lg:w-1/2">
+            <div class="leading-loose">
+              <h3>钠离子电池材料合成用陶瓷坩埚</h3>
+              <p class="text-zinc-400 pt-4">
+                采用优质原料和先进的生产工艺生产，产品性能优良，具有使用温度高、耐腐蚀性能强、使用寿命长等特点，质量稳定可靠。
+              </p>
+              <p class="text-zinc-400 pt-4 pb-8">
+                钠离子电池材料合成用陶瓷坩埚经客户试用检验，循环使用寿命达到多次使用。
+              </p>
+
+              <h3 class="pt-8 border-t border-zinc-700">正极材料合成用陶瓷坩埚</h3>
+              <p class="text-zinc-400 pt-4">
+                锂电池正极材料合成用陶瓷土坩埚，采用优质原料和先进的生产工艺生产，产品性能优良，具有使用温度高、耐腐蚀性能强、使用寿命长等特点，质量稳定可靠。
+              </p>
+              <p class="text-zinc-400 pt-4">主要产品包括三元正极材料、钴酸锂、磷酸铁锂等正极材料合成用陶瓷坩埚。</p>
+              <p class="text-zinc-400 pt-4">其中三元正极材料合成用陶瓷坩埚经客户试用检验，循环使用寿命达到38次以上。</p>
+            </div>
+          </div>
+          <div class="right w-full lg:w-1/2">
+            <img src="images/xiabo.jpg" class="rounded-2xl" alt="" />
           </div>
         </div>
-        <h1 class="text-4xl font-bold text-white pb-12 text-center">钠离子电池材料合成用陶瓷璃</h1>
-        <div class="flex flex-col md:flex-row gap-6 lg:gap-12 xl:gap-32">
-          <div class="leading-loose">
-            <p class="text-zinc-400 pt-4">
-              采用优质原料和先进的生产工艺生产，产品性能优良，具
-              有使用温度高、耐腐蚀性能强、使用寿命长等特点，质量稳定可靠。
-            </p>
-            <p class="text-zinc-400 pt-4">钠离子电池材料合成用陶瓷坩埚经客户试用检验，循环使 用寿命达到多次使用。</p>
-          </div>
-          
-        </div>
-        <div class="overflow-x-auto border border-zinc-700 rounded-xl mt-8">
-          <table class="table">
-            <thead>
-              <tr>
-                <th>项目</th>
-                <th>CRN</th>
-                <th>SDM</th>
-                <th>SDS</th>
-                <th>SDC</th>
-                <th>无氢TaC</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr class="bg-base-200">
-                <td>涂层材料</td>
-                <td>CRN</td>
-                <td>MoS2-基</td>
-                <td>C:H+Me</td>
-                <td>
-                  CrN+C:H
-                  <br />
-                  WC+C:H
-                </td>
-                <td>Cr+C/C</td>
-              </tr>
-              <tr>
-                <td>涂层硬度(HV)</td>
-                <td>1800-2300</td>
-                <td>500-1000</td>
-                <td>1600-2000</td>
-                <td>2000-2800</td>
-                <td>4000-7000</td>
-              </tr>
-              <tr class="bg-base-200">
-                <td>涂层厚度(pm)</td>
-                <td>1-5</td>
-                <td>0.8-1.2</td>
-                <td>1.5 -2.5</td>
-                <td>1.5 -2.5</td>
-                <td>0.2-1</td>
-              </tr>
-              <tr>
-                <td>与钢的磨擦系数</td>
-                <td>< 0.3</td>
-                <td>< 0.1</td>
-                <td>0.05-0.1</td>
-                <td>0.05-0.15</td>
-                <td>0.05-0.15</td>
-              </tr>
-              <tr class="bg-base-200">
-                <td>涂层温度(° C)</td>
-                <td>< 500</td>
-                <td>< 200</td>
-                <td>< 200</td>
-                <td>< 200</td>
-                <td>< 200</td>
-              </tr>
-              <tr>
-                <td>最高适用温度(°C)</td>
-                <td>600</td>
-                <td>400</td>
-                <td>400</td>
-                <td>325</td>
-                <td>450</td>
-              </tr>
-              <tr class="bg-base-200">
-                <td>涂层颜色</td>
-                <td>银白色</td>
-                <td>无烟煤</td>
-                <td>黑色</td>
-                <td>深灰</td>
-                <td>黑色</td>
-              </tr>
-              <tr>
-                <td>应用领域</td>
-                <td>适合一般耐磨环境的各类精密零部件</td>
-                <td>
-                  通常和硬质涂层结合使用，
-                  <br />
-                  和铝合金粘性无，
-                  <br />
-                  适合加工不锈钢、
-                  <br />
-                  有色金属和铝合金的冲压成型件，
-                  <br />
-                  包括冲压固态铝;
-                  <br />
-                  适合需要减少摩擦磨损件;
-                </td>
-                <td>
-                  适合各类精密零部件，如发动机、
-                  <br />
-                  齿轮、轴承、食品及医疗等行业零件;
-                </td>
-                <td>
-                  适合高磨损零部件;
-                  <br />
-                  适合有色金属切削冷冲压注塑零件
-                </td>
-                <td>
-                  适合有色金属切削冷冲压注塑零件;适合有色金属高速切削;
-                  <br />
-                  适合各类精密零部件;适合高腐蚀,高负载，
-                  <br />
-                  高温高压等恶劣环境的各类部件
-                </td>
-              </tr>
-            </tbody>
-          </table>
-        </div>
-        <div class="grid grid-cols-2 lg:grid-cols-4 gap-6 mt-8">
-          <div class="card bg-base-100 shadow-xl border border-zinc-700">
-            <div class="card-body px-6 py-4">
-              <h2 class="card-title">汽车零部件</h2>
-              <p class="text-zinc-500">应用：油针、柱塞、挺柱、滚轮销、活塞销、活塞环、阀座等等</p>
-            </div>
-            <figure>
-              <img src="images/lbj1.jpg" class="w-full" alt="PolyLam" />
-            </figure>
-          </div>
+        <div class="py-16">
+          <div class="overflow-x-auto border border-zinc-700 rounded-xl overflow-hidden">
+            <table class="table text-base font-normal">
+              <caption class="caption-bottom text-xs text-zinc-500 py-4 border-t border-zinc-700">
+                重量极差*△W=最重样品重量-最轻样品重量
+              </caption>
+              <!-- head -->
+              <thead>
+                <tr class="bg-zinc-800/40 text-sm">
+                  <th></th>
+                  <th class="max-w-52">项目名称</th>
+                  <th>单位</th>
+                  <th>指标</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr class="hover:bg-zinc-800/30 transition hover:duration-500">
+                  <th class="text-zinc-500">1</th>
+                  <td>材质（JG-N）</td>
+                  <td>/</td>
+                  <td>莫来石-堇青石复合材料</td>
+                </tr>
 
-          <div class="card bg-base-100 shadow-xl border border-zinc-700">
-            <div class="card-body px-6 py-4">
-              <h2 class="card-title">医疗零部件</h2>
-              <p class="text-zinc-500">应用：手术钳类器械、切削类器械、外科手术器械、植入式器械等等</p>
-            </div>
-            <figure>
-              <img src="images/lbj2.jpg" class="w-full" alt="PolyLam" />
-            </figure>
-          </div>
+                <tr class="hover:bg-zinc-800/30 transition hover:duration-500">
+                  <th class="text-zinc-500">2</th>
+                  <td>重量极差</td>
+                  <td>Kg</td>
+                  <td>△W=0.4</td>
+                </tr>
 
-          <div class="card bg-base-100 shadow-xl border border-zinc-700">
-            <div class="card-body px-6 py-4">
-              <h2 class="card-title">工业精密部件</h2>
-              <p class="text-zinc-500">应用：锂电池涂布模头、阀门部件等等</p>
-            </div>
-            <figure>
-              <img src="images/lbj3.jpg" class="w-full" alt="PolyLam" />
-            </figure>
-          </div>
+                <tr class="hover:bg-zinc-800/30 transition hover:duration-500">
+                  <th class="text-zinc-500">3</th>
+                  <td>体积密度</td>
+                  <td>g/cm³</td>
+                  <td>2.0±0.2</td>
+                </tr>
 
-          <div class="card bg-base-100 shadow-xl border border-zinc-700">
-            <div class="card-body px-6 py-4">
-              <h2 class="card-title">新能源零部件</h2>
-              <p class="text-zinc-500">应用：发动机、传动系统、新能源、锁门机构等等</p>
-            </div>
-            <figure>
-              <img src="images/lbj4.jpg" class="w-full" alt="PolyLam" />
-            </figure>
+                <tr class="hover:bg-zinc-800/30 transition hover:duration-500">
+                  <th class="text-zinc-500">4</th>
+                  <td>热膨胀系数</td>
+                  <td>1/°C</td>
+                  <td>≤4.0×10-6</td>
+                </tr>
+
+                <tr class="hover:bg-zinc-800/30 transition hover:duration-500">
+                  <th class="text-zinc-500">5</th>
+                  <td>最高耐温（耐火度）</td>
+                  <td>°C</td>
+                  <td>≥1600</td>
+                </tr>
+
+                <tr class="hover:bg-zinc-800/30 transition hover:duration-500">
+                  <th class="text-zinc-500">6</th>
+                  <td>安全使用温度</td>
+                  <td>°C</td>
+                  <td>1200</td>
+                </tr>
+
+                <tr class="hover:bg-zinc-800/30 transition hover:duration-500">
+                  <th class="text-zinc-500">7</th>
+                  <td>耐热冲击性能</td>
+                  <td>次</td>
+                  <td>≥25（△t=1070°C）</td>
+                </tr>
+              </tbody>
+            </table>
           </div>
         </div>
       </div>
@@ -262,8 +216,11 @@
           <div class="px-0 lg:px-8 xl:px-16 2xl:px-32">
             <div class="max-w-screen-3xl mx-auto">
               <div class="w-full flex sm:flex-row flex-col border border-zinc-700 border-t-0 border-b-0">
-                <a href="#" class="flex flex-auto items-center justify-between h-20 px-6 md:px-9 hover:bg-zinc-800">
-                  <div class="flex items-center gap-2 text-xl">
+                <a
+                  href="#"
+                  class="flex-1 flex flex-row items-center justify-between h-20 px-6 md:px-9 hvr-sweep-to-right_footer"
+                >
+                  <div class="flex flex-row items-center gap-2 text-xl">
                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
                       <path
                         d="M2 8.5C2 5 4 3.5 7 3.5H17C20 3.5 22 5 22 8.5V15.5C22 19 20 20.5 17 20.5H7"
@@ -305,7 +262,7 @@
                 </a>
                 <a
                   href="#"
-                  class="flex flex-auto items-center justify-between h-20 px-6 md:px-9 border-zinc-700 border-l border-t sm:border-t-0 hover:bg-zinc-800"
+                  class="flex-1 flex items-center justify-between h-20 px-6 md:px-9 border-l border-t border-zinc-700 sm:border-t-0 hvr-sweep-to-right_footer"
                 >
                   <div class="flex items-center gap-2 text-xl">
                     <svg xmlns="http://www.w3.org/2000/svg" width="18" height="22" viewBox="0 0 18 22" fill="none">
@@ -430,9 +387,11 @@
         <div class="max-w-screen-3xl mx-auto">
           <div class="sm:flex sm:items-center sm:justify-between">
             <div class="flex justify-center sm:justify-start">
-              <div class="hidden md:block"><img src="images/logo-footer.svg" alt="" class="h-9" /></div>
+              <div class="hidden md:block">
+                <img src="images/logo-footer.svg" alt="" class="h-9" />
+              </div>
             </div>
-            <div class="text-black text-sm">
+            <div class="text-black text-xs leading-relaxed">
               <p class="text-center md:text-right">本网站著作权属于ARJ CERAMICS Inc. 所有</p>
               <p class="hidden md:block">
                 未经ARJ CERAMICS Inc.授权不得以复制、转载、散布或任何形式使用本网站所刊载的内容
@@ -442,5 +401,23 @@
         </div>
       </div>
     </footer>
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <!-- Swiper -->
+    <script>
+      var swiper = new Swiper('.mySwiper', {
+        spaceBetween: 30,
+        centeredSlides: true,
+        autoplay: {
+          delay: 2500,
+          disableOnInteraction: false
+        },
+        pagination: {
+          el: '.swiper-pagination',
+          clickable: true
+        }
+      })
+    </script>
   </body>
 </html>
